@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Training and Events List View feature.
- */
-
-include_once 'training_and_events_list_view.features.inc';

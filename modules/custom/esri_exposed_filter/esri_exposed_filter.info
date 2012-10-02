@@ -1,7 +1,0 @@
-;$Id$
-name = Esri Exposed Filter
-description = Modify the Exposed Filter and fix tranlations
-package = Esri
-core = 7.x
-files[] = esri_exposed_filter.module
-dependencies[] = views

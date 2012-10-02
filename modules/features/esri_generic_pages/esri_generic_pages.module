@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Esri - Generic Pages feature.
- */
-
-include_once 'esri_generic_pages.features.inc';

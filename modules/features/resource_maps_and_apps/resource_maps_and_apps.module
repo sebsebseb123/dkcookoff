@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Resource - Maps and Apps feature.
- */
-
-include_once 'resource_maps_and_apps.features.inc';

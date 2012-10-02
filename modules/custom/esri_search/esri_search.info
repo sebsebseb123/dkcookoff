@@ -1,9 +1,0 @@
-;$Id$
-name = Search Updates
-description = 'Search update for Esri'
-package = Esri
-core = 7.x
-files[] = esri_search_log.module
-files[] = plugins/facetapi/widget_esri_search.inc
-dependencies[] = apachesolr
-dependencies[] = facetapi
