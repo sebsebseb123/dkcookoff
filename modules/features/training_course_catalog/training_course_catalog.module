@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Training - Course Catalog feature.
+ */
+
+include_once 'training_course_catalog.features.inc';

@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_partners_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_partners_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}

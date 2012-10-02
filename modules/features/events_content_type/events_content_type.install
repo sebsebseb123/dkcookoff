@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function events_content_type_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'events_content_type_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Sets Update Publishing Options
+ */
+function events_content_type_update_10001(&$sandbox) {
+  variable_set('language_content_type_events', 4);
+}

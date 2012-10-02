@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function training_content_types_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'training_content_types_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Sets Update Publishing Options
+ */
+function training_content_types_update_10001(&$sandbox) {
+  variable_set('language_content_type_training', 4);
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Removes old field from training content type 
+ */
+function training_content_types_update_10002(&$sandbox) {
+  $field = field_info_field('field_training_keywords');
+
+  if ($field) {
+    field_delete_field('field_training_keywords');
+  }
+}

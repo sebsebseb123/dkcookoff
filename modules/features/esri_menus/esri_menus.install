@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_menus_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_menus_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets Tertiary Sidebar Blocks
+ */
+function esri_menus_update_10001(&$sandbox) {
+	 // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'menu_block',
+      'delta' => 1,
+      'region' => 'sidebar_first',
+    ),
+    array(
+      'module' => 'menu_block',
+      'delta' => 2,
+      'region' => 'sidebar_first',
+    )
+  );
+
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = -1;
+    $record['title'] = '<none>';
+
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'title', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets Tertiary Sidebar Variables
+ */
+function esri_menus_update_10002(&$sandbox) {
+	$values = array(
+		'menu_block_1' => array(
+				'admin_title' => 'Tertiary Navigation',
+				'depth' => 5,
+				'expanded' => 0,
+				'follow' => 0,
+				'level' => 2,
+				'parent' => 'menu-primary-navigation:0'
+			),
+		'menu_block_2' => array(
+				'admin_title' => 'Tertiary Navigation FR',
+				'depth' => 5,
+				'expanded' => 0,
+				'follow' => 0,
+				'level' => 2,
+				'parent' => 'menu-primary-navigation-fr:0'
+			)
+		);
+
+	foreach ($values as $menuTitle => $menuValues) {
+		foreach ($menuValues as $valueTitle => $valueValue) {
+			variable_set($menuTitle . '_'. $valueTitle, $valueValue);
+		}
+	}
+
+	//Set Menu Block IDs
+	variable_set('menu_block_ids', array(0=>1, 1=>2));
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets Tertiary Sidebar Menu Locale with Multiblock Menu
+ */
+function esri_menus_update_10003(&$sandbox) {
+	$values = array(
+    array(
+      'module' => 'menu_block',
+      'delta'  => '1',
+      'language' => 'en',
+    ),
+    array(
+      'module' => 'menu_block',
+      'delta'  => '2',
+      'language' => 'fr',
+    ),
+    array(
+      'module' => 'multiblock',
+      'delta'  => '2',
+      'language' => 'en',
+    ),
+    array(
+      'module' => 'multiblock',
+      'delta'  => '3',
+      'language' => 'fr',
+    ),
+  );
+
+  foreach ($values as $record) {
+    $query = db_insert('i18n_block_language')->fields(array('module', 'delta', 'language'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  drupal_flush_all_caches();
+}
+
+/**
+ * Implements hook_update_N().
+ *   Unset Default Sidebar Blocks
+ */
+function esri_menus_update_10004(&$sandbox) {
+  $values = array(
+      'system' => 'navigation',
+      'user' => 'login',
+      'system' => 'management'
+    );
+
+  foreach ($values as $blockModule => $blockDelta) {
+    $query = db_update('block')->fields(array(
+      'region' => -1))
+      ->condition('module', $blockModule)
+      ->condition('delta', $blockDelta);
+
+    $query->execute();
+  }
+}

@@ -1,0 +1,11 @@
+name = Esri Languages
+description = Languages for Esri site
+core = 7.x
+package = Esri
+version = 7.x-1.0
+project = esri_languages
+dependencies[] = features
+dependencies[] = locale
+features[features_api][] = api:1
+features[language][] = en
+features[language][] = fr

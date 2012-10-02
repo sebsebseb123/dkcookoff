@@ -1,0 +1,16 @@
+name = Training and Events List View
+core = 7.x
+package = Esri Training
+php = 5.2.4
+version = 7.x-1.0
+project = training_and_events_list_view
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = views
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[page_manager_pages][] = registration_page_regonline_
+features[views_view][] = training_and_events_list_view
+features[views_view][] = training_important_info
+features[views_view][] = training_location_details

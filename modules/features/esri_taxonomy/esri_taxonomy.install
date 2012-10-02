@@ -1,0 +1,436 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_taxonomy_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_taxonomy_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Add taxonomy terms.
+ *   We ended up having to do most of this feature manually to do this.
+ *   Simply because the update hook ends up firing before any of the required
+ *   fields are created or setup.
+ */
+function esri_taxonomy_update_10001(&$sandbox) {
+
+  // Load our add_terms include file.
+  module_load_include('inc', 'esri_taxonomy', 'esri_taxonomy.add_terms');
+
+  // Prep for adding terms.
+  esri_taxonomy_pre_term_save();
+
+  // Get all the vocabularies.
+  $all_vocabs = taxonomy_vocabulary_load_multiple(FALSE);
+
+  // For each vocabulary, get the terms.
+  foreach ($all_vocabs as $vid => $vocab) {
+    // Init to empty array.
+    $terms = array();
+
+    // There usually isn't an image to attach to the vocab,
+    // so let's set it to FALSE.
+    $image = FALSE;
+
+    switch ($vocab->machine_name) {
+      case 'resource_type' :
+        $terms = array(
+          'Case Study',
+          'Article',
+          'Brochure',
+          'White Paper',
+          'Publication',
+          'White Paper',
+          'Publication',
+          'Recorded Web Seminar',
+          'Video',
+        );
+        $image = TRUE;
+        break;
+      case 'resource_industry' :
+        $terms = array(
+          'Defence',
+          'Business',
+          'Education',
+          'Government',
+          'Health Care',
+          'Natural Resources',
+          'Public Safety',
+          'Public Works',
+          'Telecommunications',
+          'Transportation',
+          'Utilities',
+        );
+        break;
+      case 'resource_product' :
+        $terms = array(
+          'ArcGIS for Desktop',
+          'ArcGIS for Mobile',
+          'ArcGIS for Server',
+          'ArcGIS Online',
+          'Esri Business Analyst Product Suite',
+          'Esri CityEngine',
+          'ArcGIS for SharePoint',
+          'Esri Maps for IBM Cognos',
+          'Esri Maps for Office',
+          'ArcFM Suite',
+          'Cityworks Suite',
+          'CrimeAnalyst',
+          'Geocortex Essentials',
+          'Geocortex Optimizer',
+          'PurVIEW',
+          'VoyagerGIS',
+          'Geoportal Server',
+          'ArcGIS for Transportation Analytics',
+        );
+        break;
+      case 'resource_services' :
+        $terms = array(
+          'Training',
+          'Professional Services',
+          'Technical Support',
+        );
+        break;
+      case 'boolean' :
+        $terms = array(
+          'TRUE',
+          'FALSE',
+        );
+        break;
+      default :
+        continue;
+        break;
+    }
+
+    // Save any new terms.
+    esri_taxonomy_save_terms($terms, $vocab, $image);
+  }
+
+  return t('Add taxonomy terms');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Add taxonomy terms for teaching materials.
+ */
+function esri_taxonomy_update_10006(&$sandbox) {
+
+  // Load our add_terms include file.
+  module_load_include('inc', 'esri_taxonomy', 'esri_taxonomy.add_terms');
+
+  // Prep for adding terms.
+  esri_taxonomy_pre_term_save();
+
+  // Get all the vocabularies.
+  $all_vocabs = taxonomy_vocabulary_load_multiple(FALSE);
+
+  // For each vocabulary, get the terms.
+  foreach ($all_vocabs as $vid => $vocab) {
+    // Init to empty array.
+    $terms = array();
+
+    // There usually isn't an image to attach to the vocab,
+    // so let's set it to FALSE.
+    $image = FALSE;
+
+    switch ($vocab->machine_name) {
+      case 'teaching_material_type' :
+        $terms = array(
+          'Full Lesson Pack',
+          'Presentation',
+          'Tutorial',
+          'Assignment',
+          'Data',
+          'Video',
+          'Reading list-bibliography',
+          'Web site',
+        );
+        $image = TRUE;
+        break;
+      case 'file_type' :
+        $terms = array(
+          'PDF',
+          'PPT',
+          'DOC',
+          'ZIP',
+          'File Geodatabase',
+          'Excel',
+          'Shapefile',
+          'XML Workspace',
+        );
+        break;
+      case 'difficulty_level' :
+        $terms = array(
+          'Beginner',
+          'Intermediate',
+          'Advanced',
+        );
+        break;
+      case 'geographic_focus' :
+        $terms = array(
+          'Local',
+          'Regional',
+          'Provincial/Terriotorial',
+          'National',
+          'International',
+          'Global',
+        );
+        break;
+      case 'grade' :
+        $terms = array(
+          'K- Grade 8',
+          'K- Grade 12',
+          'Grades 9-12',
+          'University/College',
+          'Kindergarten',
+          'Grade 1',
+          'Grade 2',
+          'Grade 3',
+          'Grade 4',
+          'Grade 5',
+          'Grade 6',
+          'Grade 7',
+          'Grade 8',
+          'Grade 9',
+          'Grade 10',
+          'Grade 11',
+          'Grade 12',
+        );
+        break;
+      case 'platform_education' :
+        $terms = array(
+          'ArcGIS for Desktop',
+          'ArcGIS Online',
+          'Web-based',
+        );
+        break;
+      case 'product_education' :
+        $terms = array(
+          'ArcGIS 9.x',
+          'ArcGIS 10.x',
+        );
+        break;
+      case 'subject_area' :
+        $terms = array(
+          'Business',
+          'Earth Science',
+          'English',
+          'Environmental Science',
+          'French ',
+          'Geography',
+          'Health',
+          'History',
+          'Law',
+          'Math',
+          'Political Science',
+          'Science',
+          'Social Studies',
+        );
+        break;
+      default :
+        continue;
+        break;
+    }
+
+    // Save any new terms.
+    esri_taxonomy_save_terms($terms, $vocab, $image);
+  }
+
+  return t('Add taxonomy terms for teaching materials.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Add taxonomy terms for Provinces.
+ */
+function esri_taxonomy_update_10011(&$sandbox) {
+
+  // Load our add_terms include file.
+  module_load_include('inc', 'esri_taxonomy', 'esri_taxonomy.add_terms');
+
+  // Prep for adding terms.
+  esri_taxonomy_pre_term_save();
+
+  // Get all the vocabularies.
+  $all_vocabs = taxonomy_vocabulary_load_multiple(FALSE);
+
+  // For each vocabulary, get the terms.
+  foreach ($all_vocabs as $vid => $vocab) {
+    // Init to empty array.
+    $terms = array();
+
+    // There usually isn't an image to attach to the vocab,
+    // so let's set it to FALSE.
+    $image = FALSE;
+
+    switch ($vocab->machine_name) {
+      case 'provinces' :
+        $terms = array(
+          'Alberta',
+          'British Columbia',
+          'Manitoba',
+          'New Brunswick',
+          'Newfoundland and Labrador',
+          'Northwest Territories',
+          'Nova Scotia',
+          'Nunavut',
+          'Ontario',
+          'Prince Edward Island',
+          'Quebec',
+          'Saskatchewan',
+          'Yukon Territory',
+        );
+        break;
+      case 'training_type' :
+        $terms = array(
+          'Training Courses',
+          'Web Seminars',
+          'User Conferences',
+          'Seminars',
+          'Tradeshows & Conferences',
+          'Dev Meet Ups',
+        );
+        break;
+      case 'time_zones' :
+        $terms = array(
+          'EST',
+          'MT',
+        );
+        break;
+      case 'delivery_language' :
+        $terms = array(
+          'English',
+          'French',
+          'Bilingual',
+        );
+        break;
+      case 'course_category' :
+        $terms = array(
+          'ArcGIS Foundation',
+          'Cartography and Map Production',
+          'Spatial Analysis',
+          'Geodata Production and Editing',
+          'ArcGIS Customization and Development',
+          'Web and Server GIS',
+          'ArcGIS Skills Review',
+          'Technology Courses by Request',
+        );
+        break;
+      default :
+        continue;
+        break;
+    }
+
+    // Save any new terms.
+    esri_taxonomy_save_terms($terms, $vocab, $image);
+  }
+
+  return t('Add taxonomy terms for teaching materials.');
+}
+
+/**
+ * Insert Focal Group Terms
+ */
+function esri_taxonomy_update_10012(&$sandbox) {
+
+  // Load our add_terms include file.
+  module_load_include('inc', 'esri_taxonomy', 'esri_taxonomy.add_terms');
+
+  // Prep for adding terms.
+  esri_taxonomy_pre_term_save();
+
+  // Get all the vocabularies.
+  $all_vocabs = taxonomy_vocabulary_load_multiple(FALSE);
+
+  // For each vocabulary, get the terms.
+  foreach ($all_vocabs as $vid => $vocab) {
+    // Init to empty array.
+    $terms = array();
+
+    // There usually isn't an image to attach to the vocab,
+    // so let's set it to FALSE.
+    $image = FALSE;
+
+    switch ($vocab->machine_name) {
+      case 'page_focal_groups' :
+        $terms = array(
+          'Homepage'
+        );
+        break;
+      default :
+        continue;
+        break;
+    }
+
+    // Save any new terms.
+    esri_taxonomy_save_terms($terms, $vocab, $image);
+  }
+
+  return t('Add taxonomy terms');
+}
+
+/**
+ * Insert Esri Partner Terms
+ */
+function esri_taxonomy_update_10013(&$sandbox) {
+
+  // Load our add_terms include file.
+  module_load_include('inc', 'esri_taxonomy', 'esri_taxonomy.add_terms');
+
+  // Prep for adding terms.
+  esri_taxonomy_pre_term_save();
+
+  // Get all the vocabularies.
+  $all_vocabs = taxonomy_vocabulary_load_multiple(FALSE);
+
+  // For each vocabulary, get the terms.
+  foreach ($all_vocabs as $vid => $vocab) {
+    // Init to empty array.
+    $terms = array();
+
+    // There usually isn't an image to attach to the vocab,
+    // so let's set it to FALSE.
+    $image = FALSE;
+
+    switch ($vocab->machine_name) {
+      case 'solution_type' :
+        $terms = array(
+          'Software',
+          'Data',
+          'Hardware',
+        );
+        break;
+      case 'partner_type' :
+        $terms = array(
+          'Esri Partner Network',
+          'Supplier',
+          'Value Added Reseller',
+        );
+        break;
+        break;
+      default :
+        continue;
+        break;
+    }
+
+    // Save any new terms.
+    esri_taxonomy_save_terms($terms, $vocab, $image);
+  }
+
+  return t('Add taxonomy terms');
+}

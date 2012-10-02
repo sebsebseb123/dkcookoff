@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_languages_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_languages_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Sets Update Englsih
+ */
+function esri_languages_update_10001(&$sandbox) {
+  $query = db_update('languages')->fields(array(
+      'native' => 'EN',
+      'prefix' => 'en'
+    ))
+    ->condition('language', 'en');
+
+  $query->execute();
+  drupal_flush_all_caches();
+  return t('Success! English has been updated');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets all languages
+ */
+function esri_languages_update_10002(&$sandbox) {
+  $values = array(
+    array(
+      'language' => 'fr',
+      'name' => 'French',
+      'native' => 'FR',
+      'direction' => '0',
+      'enabled' => '1',
+      'plurals' => '0',
+      'formula' => '',
+      'domain' => '',
+      'prefix' => 'fr',
+      'weight' => '0',
+      'javascript' => ''
+    ),
+  );
+
+  // Insert Languages
+  foreach ($values as $record) {
+    $query = db_insert('languages')->fields(array('language', 'name', 'native', 'direction', 'enabled', 'plurals', 'formula', 'domain', 'prefix', 'weight', 'javascript'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  drupal_flush_all_caches();
+
+  variable_set('language_count', 2);
+  variable_set('language_negotiation_language', esri_languages_language_negotiation_language());
+  variable_set('language_negotiation_language_content', esri_languages_language_negotiation_language_content());
+  variable_set('language_negotiation_language_url', esri_languages_language_negotiation_language_url());
+  variable_set('language_default', esri_languages_language_default());
+
+  drupal_flush_all_caches();
+  return t('Success! languages have been set');
+}
+
+function esri_languages_update_10003(&$sandbox) {
+  //Insert Multi Block
+  $query = db_insert('multiblock')->fields(array(
+      'title', 'module', 'orig_delta'
+    ));
+  $query->values(array(
+      'Language Switcher (Responsive)',
+      'locale',
+      'language'
+    ));
+  $query->execute();
+}

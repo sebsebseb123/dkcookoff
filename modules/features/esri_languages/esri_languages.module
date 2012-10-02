@@ -1,0 +1,113 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+function esri_languages_language_negotiation_language() {
+	$value = array (
+		'locale-url' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_url',
+				'switcher' => 'locale_language_switcher_url',
+				'url_rewrite' => 'locale_language_url_rewrite_url',
+			),
+			'file' => 'includes/locale.inc',
+		),
+		'locale-session' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_session',
+				'switcher' => 'locale_language_switcher_session',
+				'url_rewrite' => 'locale_language_url_rewrite_session',
+			),
+				'file' => 'includes/locale.inc',
+		),
+		'locale-browser' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_browser',
+			),
+			'file' => 'includes/locale.inc',
+			'cache' => 0,
+		),
+		'language-default' => array (
+			'callbacks' => array (
+				'language' => 'language_from_default',
+			),
+		)
+	);
+
+	return $value;
+}
+
+function esri_languages_language_negotiation_language_content() {
+	$value = array (
+		'locale-url' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_url',
+				'switcher' => 'locale_language_switcher_url',
+				'url_rewrite' => 'locale_language_url_rewrite_url',
+			),
+			'file' => 'includes/locale.inc',
+		),
+		'locale-session' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_session',
+				'switcher' => 'locale_language_switcher_session',
+				'url_rewrite' => 'locale_language_url_rewrite_session',
+			),
+			'file' => 'includes/locale.inc',
+		),
+		'locale-browser' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_browser',
+			),
+			'file' => 'includes/locale.inc',
+			'cache' => 0,
+		),
+		'language-default' => array (
+			'callbacks' => array (
+				'language' => 'language_from_default',
+			),
+		),
+	);
+
+	return $value;
+}
+
+function esri_languages_language_negotiation_language_url() {
+	$value = array (
+		'locale-url' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_from_url',
+				'switcher' => 'locale_language_switcher_url',
+				'url_rewrite' => 'locale_language_url_rewrite_url',
+			),
+			'file' => 'includes/locale.inc',
+		),
+		'locale-url-fallback' => array (
+			'callbacks' => array (
+				'language' => 'locale_language_url_fallback',
+			),
+			'file' => 'includes/locale.inc',
+		),
+	);
+
+	return $value;
+}
+
+function esri_languages_language_default() {
+	$value = new stdClass;
+	$value->language = en;
+	$value->name = 'English';
+	$value->native = 'EN';
+	$value->direction = '0';
+	$value->enabled = 1;
+	$value->plurals = 0;
+	$value->formula = '';
+	$value->domain = '';
+	$value->prefix = 'en';
+	$value->weight = 0;
+	$value->javascript = '';
+
+	return $value;
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Esri Partners feature.
+ */
+
+include_once 'esri_partners.features.inc';

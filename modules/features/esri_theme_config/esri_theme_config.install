@@ -1,0 +1,497 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_theme_config_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_theme_config_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets custom menu block positions
+ */
+function esri_theme_config_update_10001(&$sandbox) {
+  // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'locale',
+      'delta' => 'language',
+      'region' => 'header',
+    ),
+    array(
+      'module' => 'menu',
+      'delta' => 'menu-header-menu',
+      'region' => 'header',
+    ),
+    array(
+      'module' => 'search',
+      'delta' => 'form',
+      'region' => 'header',
+    ),
+    array(
+      'module' => 'menu',
+      'delta' => 'menu-primary-navigation',
+      'region' => 'navigation',
+    ),
+    array(
+      'module' => 'menu',
+      'delta' => 'menu-primary-navigation-fr',
+      'region' => 'navigation',
+    ),
+    array(
+      'module' => 'menu',
+      'delta' => 'menu-footer-menu',
+      'region' => 'footer_bottom',
+    ),
+    array(
+      'module' => 'multiblock',
+      'delta' => '2',
+      'region' => 'rsp_navigation',
+    ),
+    array(
+      'module' => 'multiblock',
+      'delta' => '3',
+      'region' => 'rsp_navigation',
+    ),
+  );
+
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = -1;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets position for copyright notice
+ */
+function esri_theme_config_update_10002(&$sandbox) {
+
+  // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'esri_theme_config',
+      'delta'  => 'copyright',
+      'region' => 'footer_bottom',
+    ),
+  );
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = 0;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets position for responsive header nav
+ */
+function esri_theme_config_update_10003(&$sandbox) {
+
+  // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'esri_theme_config',
+      'delta'  => 'header_nav_rsp',
+      'region' => 'header',
+    ),
+  );
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = -1;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets Insert Second Instance of Lanuage Switcher
+ */
+function esri_theme_config_update_10004(&$sandbox) {
+  // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'multiblock',
+      'delta' => '1',
+      'region' => 'rsp_language',
+    ),
+  );
+
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = -1;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Insert the Standard date format July 20, 2012
+ */
+function esri_theme_config_update_10005(&$sandbox) {
+  $query = db_insert('date_formats')->fields(array(
+      'format', 'type', 'locked'
+    ))
+    ->values(array(
+      'F d, Y', 'standard', 1
+    ));
+
+  $query->execute();
+
+  $query = db_insert('date_format_type')->fields(array(
+      'type', 'title', 'locked'
+    ))
+    ->values(array(
+      'standard', 'Standard', 1
+    ));
+
+  $query->execute();
+
+  variable_set('date_format_standard', 'F d, Y');
+}
+
+/**
+ *   Insert the Newsletter Block
+ */
+function esri_theme_config_update_10006(&$sandbox) {
+   // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'esri_theme_config',
+      'delta'  => 'newsletter',
+      'region' => 'footer_top',
+    ),
+  );
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = 0;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Set Theme Settings
+ */
+function esri_theme_config_update_10007(&$sandbox) {
+  $theme_settings = array (
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'esri_tabs' => 1,
+    'esri_breadcrumb' => 'yes',
+    'esri_breadcrumb_separator' => '»',
+    'esri_breadcrumb_home' => 0,
+    'esri_breadcrumb_trailing' => 0,
+    'esri_breadcrumb_title' => 0,
+    'wireframe_mode' => 0,
+    'clear_registry' => 0,
+    'esri_facebook' => 'https://www.facebook.com/esricanada',
+    'esri_twitter' => 'http://twitter.com/esricanada',
+    'esri_youtube' => 'http://www.youtube.com/user/esricanadatv',
+    'esri_linkedin' => 'http://www.linkedin.com/company/esri-canada',
+  );
+
+  variable_set('theme_esri_settings', $theme_settings);
+}
+
+/**
+ * Implements hook_update_N().
+ *   Creates the "Accordion" template.
+ */
+function esri_theme_config_update_10008(&$sandbox) {
+  module_enable(array('wysiwyg_template'));
+
+  wysiwyg_profile_cache_clear();
+
+  // Accordions
+  $template = new stdClass();
+  // Edit this to true to make a default template disabled initially
+  $template->disabled = FALSE;
+
+  $template->api_version = 2;
+  $template->name = 'accordion';
+  $template->title = 'Esri Accordion';
+  $template->description = 'Implements an Esri styled jQuery accordion';
+  $template->body = '
+    <div class="accordion-wrapper expanded">
+      <div class="accordion-title">
+        Accordion Title
+        <span class="accordion-indicator"></span>
+      </div>
+      <div class="accordion-body">
+        Accordion Body
+      </div>
+    </div>
+  ';
+  $template = (array) $template;
+  wysiwyg_template_save_template($template);
+
+
+  // Blockquotes
+  wysiwyg_profile_cache_clear();
+
+  $template = new stdClass();
+  // Edit this to true to make a default template disabled initially
+  $template->disabled = FALSE;
+
+  $template->api_version = 2;
+  $template->name = 'blockquote';
+  $template->title = 'Esri Blockquote';
+  $template->description = 'Implements an Esri styled blockquote';
+  $template->body = '
+    <div class="blockquote-wrapper">
+      <div class="color-strip clearfix">
+        <div class="strip-first"></div>
+        <div class="strip-second"></div>
+        <div class="strip-third"></div>
+        <div class="strip-fourth"></div>
+      </div>
+      <blockquote>
+        Blockquote body
+      </blockquote>
+    </div>
+  ';
+  $template = (array) $template;
+  wysiwyg_template_save_template($template);
+}
+
+
+/**
+ * Implements hook_update_N().
+ *   Insert the Standard date format July 20, 2012 - 12:23 am
+ */
+function esri_theme_config_update_10009(&$sandbox) {
+  $query = db_insert('date_formats')->fields(array(
+      'format', 'type', 'locked'
+    ))
+    ->values(array(
+      'M d, Y - g:i a', 'standard_time', 1
+    ));
+
+  $query->execute();
+
+  $query = db_insert('date_format_type')->fields(array(
+      'type', 'title', 'locked'
+    ))
+    ->values(array(
+      'standard_time', 'Standard Time', 1
+    ));
+
+  $query->execute();
+
+  variable_set('date_format_standard_time', 'M d, Y - g:i a');
+}
+
+/**
+ *   Place focal slider block for homepage
+ */
+function esri_theme_config_update_10010(&$sandbox) {
+   // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'views',
+      'delta'  => 'focal_slider-block',
+      'region' => 'focal',
+    ),
+  );
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = 0;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+  return t('Success! Custom menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Creates the "Image with Caption" template and sets settings.
+ */
+function esri_theme_config_update_10011(&$sandbox) {
+  wysiwyg_profile_cache_clear();
+
+  // Image with Caption
+  $template = new stdClass();
+  // Edit this to true to make a default template disabled initially
+  $template->disabled = FALSE;
+
+  $template->api_version = 2;
+  $template->name = 'image_caption';
+  $template->title = 'Esri Image with Caption';
+  $template->description = 'Implements an Esri styled image with caption';
+  $template->body = '
+    <div class="insetimage-wrapper">
+      <div class="insetimage-image">
+        <img src="' . drupal_get_path('module', 'esri_theme_config') . '/images/filler-image.jpg" />
+      </div>
+      <div class="insetimage-caption">
+        <span class="insetimage-label">Figure 1.1:</span>
+        Caption text, to describe the image.
+      </div>
+    </div>
+  ';
+  $template = (array) $template;
+  wysiwyg_template_save_template($template);
+
+    // Set settings for the wysiwyg
+  $serialized_values = 'a:20:{s:7:"default";i:1;s:11:"user_choose";i:1;s:11:"show_toggle";i:1;s:5:"theme";s:8:"advanced";s:8:"language";s:2:"en";s:7:"buttons";a:9:{s:7:"default";a:31:{s:4:"bold";i:1;s:6:"italic";i:1;s:9:"underline";i:1;s:13:"strikethrough";i:1;s:11:"justifyleft";i:1;s:13:"justifycenter";i:1;s:12:"justifyright";i:1;s:11:"justifyfull";i:1;s:7:"bullist";i:1;s:7:"numlist";i:1;s:7:"outdent";i:1;s:6:"indent";i:1;s:4:"undo";i:1;s:4:"redo";i:1;s:4:"link";i:1;s:6:"unlink";i:1;s:6:"anchor";i:1;s:5:"image";i:1;s:7:"cleanup";i:1;s:9:"forecolor";i:1;s:9:"backcolor";i:1;s:3:"sup";i:1;s:3:"sub";i:1;s:4:"code";i:1;s:2:"hr";i:1;s:3:"cut";i:1;s:4:"copy";i:1;s:5:"paste";i:1;s:12:"removeformat";i:1;s:7:"charmap";i:1;s:4:"help";i:1;}s:4:"font";a:4:{s:12:"formatselect";i:1;s:10:"fontselect";i:1;s:14:"fontsizeselect";i:1;s:11:"styleselect";i:1;}s:5:"paste";a:2:{s:9:"pastetext";i:1;s:9:"pasteword";i:1;}s:13:"searchreplace";a:2:{s:6:"search";i:1;s:7:"replace";i:1;}s:5:"style";a:1:{s:10:"styleprops";i:1;}s:5:"table";a:1:{s:13:"tablecontrols";i:1;}s:5:"media";a:1:{s:5:"media";i:1;}s:9:"wordcount";a:1:{s:9:"wordcount";i:1;}s:8:"template";a:1:{s:8:"template";i:1;}}s:11:"toolbar_loc";s:3:"top";s:13:"toolbar_align";s:4:"left";s:8:"path_loc";s:6:"bottom";s:8:"resizing";i:1;s:11:"verify_html";i:0;s:12:"preformatted";i:0;s:22:"convert_fonts_to_spans";i:1;s:17:"remove_linebreaks";i:0;s:23:"apply_source_formatting";i:0;s:27:"paste_auto_cleanup_on_paste";i:0;s:13:"block_formats";s:32:"p,address,pre,h2,h3,h4,h5,h6,div";s:11:"css_setting";s:4:"self";s:8:"css_path";s:66:"/profiles/esricanada/themes/esri/css/global.css, %t/css/global.css";s:11:"css_classes";s:19:"Checkmark=checkmark";}';
+  db_merge('wysiwyg')
+  ->key(array('format' => 'full_html'))
+  ->fields(array(
+    'editor' => 'tinymce',
+    'settings' => $serialized_values,
+  ))
+  ->execute();
+  wysiwyg_profile_cache_clear();
+}

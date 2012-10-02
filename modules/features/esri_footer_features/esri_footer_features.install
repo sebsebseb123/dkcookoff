@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the the theme_config_feature.
+ */
+
+/**
+ * Implements hook_install()
+ */
+function esri_footer_features_install() {
+  // Execute all module updates
+  $sandbox = array();
+  for ($i = 10000; $i < 10099; $i++){
+    $func = 'esri_footer_features_update_'.$i;
+    if (function_exists($func)){
+      $func($sandbox);
+    }
+  }
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets block positions
+ */
+function esri_footer_features_update_10001(&$sandbox) {
+  // Place blocks in specific region
+  $values = array(
+    array(
+      'module' => 'views',
+      'delta' => 'footer_feature-block',
+      'region' => 'footer_feature',
+    ),
+  );
+
+  // Unset any block elements that are present in the database already
+  foreach ($values as $position => $record) {
+    $result = db_select('block', 'b')
+      ->fields('b')
+      ->condition('module', $record['module'], '=')
+      ->condition('delta', $record['delta'], '=')
+      ->condition('theme', 'esri', '=')
+      ->execute()
+      ->fetchAssoc();
+    if (!empty($result['bid'])) {
+      unset($values[$position]);
+    }
+  }
+  // Insert into the database any block values that aren't already present
+  foreach ($values as $record) {
+    $record['theme']  = 'esri';
+    $record['pages']  = '';
+    $record['cache']  = -1;
+    $record['status'] = 1;
+    $record['weight'] = -1;
+    $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+    $query->values($record);
+    $query->execute();
+  }
+
+  return t('Success! menus have been placed in custom position.');
+}
+
+/**
+ * Implements hook_update_N().
+ *   Sets Content Type Publishing Option
+ */
+function esri_footer_features_update_10002(&$sandbox) {
+  variable_set('language_content_type_footer_feature', 2);
+}
