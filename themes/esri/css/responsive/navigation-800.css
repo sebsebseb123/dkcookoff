@@ -1,0 +1,33 @@
+/* =============================================================================
+  NAVIGATION
+  ========================================================================== */
+
+nav ul.menu > li {
+	background: url(../../images/menu-divider-short.png) no-repeat top right;
+	margin: 0 2px 0 0;
+	padding: 0 8px 0 0;
+}
+
+	nav ul.menu li.last {
+		background: none;
+	}
+
+#block-menu-menu-primary-navigation ul.menu li div.submenu {
+	left: -10px;
+}
+
+nav .block-menu ul.menu li div.submenu > ul.menu > li {
+	background: none;
+}
+
+	nav .block-menu ul.menu li div.submenu > ul.menu > li:hover {
+		background: none;
+	}
+
+nav .block-menu ul.menu li div.tertiary_menu > ul.menu li {
+	background: none;
+}
+
+nav .block-menu ul.menu li div.submenu > ul.menu > li.expanded:hover {
+	background: none;
+}

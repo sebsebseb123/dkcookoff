@@ -1,0 +1,276 @@
+/* =============================================================================
+  HOMEPAGE
+  ========================================================================== */
+
+/* Body Alterations */
+
+body.page-homepage {
+	
+}
+
+.page-homepage .center {
+  margin-left: 0;
+}
+
+.page-homepage .title-wrap {
+	background: #009AEE;
+	height: 350px;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+}
+
+.page-homepage .main-inner {
+	position: relative;
+}
+
+.page-homepage .main-bg-top {
+	display: none;
+}
+
+.page-homepage .content-wrap {
+	background: transparent;
+	max-width: 1040px;
+	padding: 0;
+}
+
+.page-homepage .content-header {
+	display: none;
+}
+
+
+/* =============================================================================
+  FOCAL SLIDER
+  ========================================================================== */
+
+.focal-slide-wrap {
+	height: 460px;
+	margin: 0 0 0 -600px;
+	overflow: hidden;
+	position: absolute;
+		top: -350px; left: 50%;
+	width: 1200px;
+	z-index: 2;
+}
+
+.focal-slide-wrap h2.block-title {
+	display: none;
+}
+
+.focal-slide-wrap .block-views {
+	height: 460px;
+	position: relative;
+	width: 100%;
+}
+
+/* Focal View Edits */
+
+.focal-slide .views-row {
+	display: none;
+	float: left;
+	position: absolute;
+		left: 0px; top: 0px;
+}
+
+	.focal-slide .views-row-first {
+		display: block;
+	}
+
+/* Responsive Hide */
+
+.focal-slide .slide-img-medium, .focal-slide .slide-img-small {
+	display: none;
+}
+
+/* Pagination */
+
+.focal-pagination {
+	position: absolute;
+		top: 295px;	left: 120px;
+	z-index: 10;
+}
+
+.focal-pagination-rsp {
+	display: none;
+	height: 32px;
+}
+
+.focal-pagination a.focal-prev, .focal-pagination a.focal-next,
+.focal-pagination-rsp a.focal-prev, .focal-pagination-rsp a.focal-next  {
+	background: #334659;
+	border-radius: 2px;
+	color: #FFF;
+	display: block;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 0.929em;
+	font-weight: bold;
+	float: left;
+	height: 25px;
+	margin: 0 8px 0 0;
+	padding-top: 9px;
+	text-align: center;
+	text-shadow: 0px 1px 2px #283848;
+	width: 50px;
+}
+	
+	.focal-pagination-rsp a.focal-prev, .focal-pagination-rsp a.focal-next {
+		border-radius: 0px;
+		margin: 0;
+		width: 49.8%;
+	}
+
+	.focal-pagination-rsp a.focal-next {
+		float: right;
+	}
+
+	.focal-pagination a:hover.focal-prev, .focal-pagination a:hover.focal-next, .focal-pagination a:focus.focal-prev, .focal-pagination a:focus.focal-next,
+	.focal-pagination-rsp a:hover.focal-prev, .focal-pagination-rsp a:hover.focal-next, .focal-pagination-rsp a:focus.focal-prev, .focal-pagination-rsp a:focus.focal-next {
+		background: #8eb722;
+		text-shadow: 0px 1px 2px #7ea31e;
+		text-decoration: none;
+	}
+
+/* =============================================================================
+  FEATURES
+  ========================================================================== */
+
+
+.view-homepage .views-row {
+	background: #FFF;
+	margin: 0 0 20px;
+	padding: 30px 40px 40px;
+}
+
+	.view-homepage .views-row-last {
+		margin-bottom: 0;
+	}
+
+.view-homepage .views-row h2 {
+	color: #292e33;
+	font-family: 'Avenir Heavy';
+	font-size: 1.286em;
+}
+
+.view-homepage .views-row .large-feature {
+	float: right;
+	height: 260px;
+	position: relative;
+	width: 465px;
+}
+
+.view-homepage .views-row .large-feature img {
+	height: 260px;
+	width: 465px;
+}
+
+.view-homepage .views-row .large-feature a .description {
+	background: url(../images/feature-blue-trans.png);
+	color: #FFF;
+	font-family: 'Avenir Heavy';
+	font-size: 1.643em;
+	height: 105px;
+	letter-spacing: -0.08em;
+	line-height: 1em;
+	padding: 25px 30px 10px;
+	position: absolute;
+		bottom: 0px; right: 20px;
+	text-shadow: 0px 1px 2px #0a9eb2;
+	width: 305px;
+}
+
+.view-homepage .views-row .large-feature a .feature-big-arrow {
+	background: url(../images/feature-big-arrow.png) no-repeat;
+	display: block;
+	height: 55px;
+	opacity: 0;
+	position: absolute;
+		top: 10px; right: 20px;
+	width: 37px;
+}
+
+	.view-homepage .views-row .large-feature a:hover .description, 
+	.view-homepage .views-row .large-feature a:focus .description {
+		background: url(../images/feature-green-trans.png);
+		text-shadow: 0px 1px 2px #75941d;
+	}
+
+.view-homepage .views-row .small-feature {
+	float: left;
+	height: 260px;
+	width: 218px;
+}
+
+	.view-homepage .views-row .small-feature-1 {
+		margin-right: 30px;
+	}
+
+.view-homepage .views-row .small-feature a .small-image {
+	height: 170px;
+	margin-bottom: 16px;
+	position: relative;
+	width: 218px;
+}
+
+	.view-homepage .views-row .small-feature a:hover,
+	.view-homepage .views-row .small-feature a:focus {
+		text-decoration: none;
+	}
+
+.view-homepage .views-row .small-feature a .small-image h3.title {
+	background: url(../images/feature-blue-trans.png);
+	color: #FFF;
+	font-size: 1.214em;
+	font-family: 'Avenir Heavy';
+	height: 30px;
+	letter-spacing: -0.08em;
+	padding: 15px 15px 5px;
+	position: absolute;
+		bottom: 0px; right: 10px;
+	margin: 0;
+	text-shadow: 0px 1px 2px #0a9eb2;
+	width: 150px;
+}
+
+.view-homepage .views-row .small-feature a .small-image .feature-big-arrow {
+	background: url(../images/feature-big-arrow.png) no-repeat;
+	display: none;
+	height: 55px;
+	opacity: 0;
+	position: absolute;
+		top: 10px; left: 95px;
+	width: 37px;
+}
+
+.view-homepage .views-row .small-feature a .description {
+	background: url(../images/feature-desc-bg.png) no-repeat 10px 2px;
+	border-left: 3px solid #01bad1;
+	color: #292e33;
+	font-family: 'Avenir Medium';
+	font-size: 1.143em;
+	letter-spacing: -0.08em;
+	padding-left: 30px;
+	height: 75px;
+}
+
+	.view-homepage .views-row .small-feature a:hover .small-image img,
+	.view-homepage .views-row .small-feature a:focus .small-image img {
+		display: none;
+	}
+
+	.view-homepage .views-row .small-feature a:hover .small-image,
+	.view-homepage .views-row .small-feature a:focus .small-image {
+		background: #99bf38;
+	}
+
+	.view-homepage .views-row .small-feature a:hover .small-image h3.title,
+	.view-homepage .views-row .small-feature a:focus .small-image h3.title {
+		background: #90b824;
+		text-shadow: 0px 1px 2px #75941d;
+	}
+
+	.view-homepage .views-row .small-feature a:hover .description,
+	.view-homepage .views-row .small-feature a:focus .description {
+		background: url(../images/feature-desc-bg.png) no-repeat 10px -98px;
+		border-left: 3px solid #97bb33;
+		text-decoration: none;
+	}

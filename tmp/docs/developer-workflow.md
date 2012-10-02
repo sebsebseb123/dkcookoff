@@ -41,4 +41,4 @@ overwritten by the Staging db. All necessary db update hooks need to be
 rerun.
 
 <!-- Links -->
-   [prose.io]: http://prose.io/#myplanetdigital/esricanada/blob/develop/tmp/docs/developer-workflow.md
+   [prose.io]: http://prose.io/#myplanetdigital/dkcookoff/blob/develop/tmp/docs/developer-workflow.md

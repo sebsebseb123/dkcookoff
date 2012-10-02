@@ -1,0 +1,25 @@
+#content {
+	float: none;
+}
+
+.two-sidebars .center,
+.sidebar-first .center {
+  margin: 0;
+}
+
+#sidebar-first {
+	border-top: 1px solid #e5e5e5;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  width: 100%;
+}
+
+.two-sidebars .center,
+.sidebar-second .center {
+  margin: 0;
+}
+
+#sidebar-second {
+	margin: 30px 0 0;
+  width: 100%;
+}

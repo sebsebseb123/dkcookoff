@@ -16,7 +16,7 @@ function esri_search_form_alter(&$form, &$form_state, $form_id) {
 function esri_search_js_alter(&$javascript) {
   // Replace accoridion_block module's init file
   if (arg(0) == 'search') {
-    $javascript['profiles/esricanada/modules/contrib/accordion_blocks/accordion_init.js']['data'] = drupal_get_path('theme', 'esri') . '/js/accordion_init.js';
+    $javascript['profiles/dkcookoff/modules/contrib/accordion_blocks/accordion_init.js']['data'] = drupal_get_path('theme', 'esri') . '/js/accordion_init.js';
   }
 }
 
@@ -25,7 +25,7 @@ function esri_search_js_alter(&$javascript) {
 */
 function esri_search_init() {
   if (arg(0) == 'search') {
-    drupal_add_js(drupal_get_path('profile', 'esricanada').'/libraries/jquery.cookie/jquery.cookie.js');
+    drupal_add_js(drupal_get_path('profile', 'dkcookoff').'/libraries/jquery.cookie/jquery.cookie.js');
   }
 }
 

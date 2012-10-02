@@ -1,0 +1,548 @@
+/* =============================================================================
+  EXPOSED FILTER STYLES
+  ========================================================================== */
+
+.view-resources .view-filters .form-item-keys input {
+    width: 130px;
+}
+
+.view-resources .view-filters .views-exposed-widget {
+    float: left;
+    margin: 0 15px 10px 0;
+    padding: 0;
+}
+
+/* Sort */
+
+.view-resources .view-filters .views-widget-sort-by {
+}
+
+    .view-resources .view-filters .views-widget-sort-by label {
+        display: none;
+    }
+
+.view-resources .view-filters .views-widget-sort-order {
+}
+
+    .view-resources .view-filters .views-widget-sort-order label {
+        display: none;
+    }
+
+.view-resources .view-filters .views-widget-sort-by .ui-select a, .view-resources .view-filters .views-widget-sort-order .ui-select a {
+    background: #ebebeb url(../images/form-select-bg-gray.png) no-repeat top right;
+    color: #758794;
+}
+
+    .view-resources .view-filters .views-widget-sort-by .ui-select a:hover, .view-resources .view-filters .views-widget-sort-by .ui-select a:focus, .view-resources .view-filters .views-widget-sort-order .ui-select a:hover, .view-resources .view-filters .views-widget-sort-order .ui-select a:focus {
+        background: #ebebeb url(../images/form-select-bg-gray.png) no-repeat bottom right;
+        color: #7e9e27;
+    }
+
+/* Date */
+
+.container-inline-date > .form-item, .container-inline-date input {
+    margin: 0 !important;
+}
+
+.container-inline-date input {
+    background: #ebebeb url(../images/form-date.png) no-repeat top right;
+    padding-right: 50px;
+    width: 95px;
+}
+
+    .container-inline-date input:hover, .container-inline-date input:focus {
+        background: #ebebeb url(../images/form-date.png) no-repeat bottom right;
+    }
+
+.container-inline-date .description {
+    display: none;
+}
+
+/* Find */
+
+.view-resources .view-filters .views-submit-button input {
+    background: #e4692b;
+    color: #ffffff;
+    margin: 0;
+    min-width: 90px;
+    text-shadow: 0px 1px 2px #cb5d26;
+}
+
+    .view-resources .view-filters .views-submit-button input:hover, .view-resources .view-filters .views-submit-button input:focus {
+        background: #8eb722;
+        text-decoration: none;
+        text-shadow: 0px 1px 2px #61810d;
+    }
+
+/* Reset */
+
+.view-resources .view-filters .views-reset-button input {
+    background: #758794;
+    color: #ffffff;
+    margin: 0;
+    min-width: 90px;
+    text-shadow: 0px 1px 2px #687884;
+}
+
+    .view-resources .view-filters .views-reset-button input:hover, .view-resources .view-filters .views-reset-button input:focus {
+        background: #8eb722;
+        text-decoration: none;
+        text-shadow: 0px 1px 2px #61810d;
+    }
+
+/* Empty */
+
+.view-resources .view-empty {
+    padding: 50px 0;
+}
+
+/* =============================================================================
+  MESSAGE BOX
+  ========================================================================== */
+
+.list-message {
+    background: #e8f6fd;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 25px;
+}
+
+.list-message p {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.list-message a {
+    color: #239ba9;
+}
+
+    .list-message a:hover, .list-message a:focus {
+        color: #84ab20;
+        text-decoration: underline;
+    }
+
+/* =============================================================================
+  GENERAL RESOURCE STYLES
+  ========================================================================== */
+
+
+/* For all resources pages just apply Views > Advanced > CSS > view-resources class */
+
+.view-resources {
+
+}
+
+.view-resources .views-row {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 10px;
+}
+
+    .view-resources .views-row-last {
+        border: none;
+    }
+
+.view-resources .views-row .resource-content {
+    float: left;
+    margin-right: -100%;
+    width: 100%;
+}
+
+.view-resources .views-row .resource-content .resource-content-inner {
+
+}
+
+.view-resources .views-row h3 {
+    color: #292e33;
+    font-family: 'Avenir Heavy';
+    font-size: 1.286em;
+    letter-spacing: -0.080em;
+    margin: 0 0 2px;
+}
+
+.view-resources .views-row h3 a {
+    border-bottom: 1px dotted #bec0c1;
+    color: #292e33;
+}
+
+    .view-resources .views-row h3 a:hover, .view-resources .views-row h3 a:focus {
+        border-bottom: 1px solid #e4edc9;
+        color: #698d0c;
+        text-decoration: none;
+    }
+
+/* Areas */
+
+.view-resources .views-row .block-float {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+    .view-resources .views-row .block-float-pair {
+        margin-right: 4px;
+    }
+
+.view-resources .views-row .use-helvetica {
+    color: #b1b3b6;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.857em;
+}
+
+.view-resources .views-row .break-up {
+    height: 30px;
+}
+
+/* Drill Down */
+
+.two-66-33 .region-two-66-33-second .panel-pane.key-information,
+.two-66-33 .region-two-66-33-second .panel-pane .key-information {
+    background: #F3F3F3 url(../images/bg-dark-lines.png) repeat;
+    padding: 20px 20px 0;
+    margin-bottom: 1.5em;
+}
+    .two-66-33 .region-two-66-33-second .panel-pane.key-information h2,
+    .two-66-33 .region-two-66-33-second .panel-pane .key-information h2 {
+        color: #e26836;
+        font-size: 1em;
+        border-bottom: 1px solid rgba(226,104,54,.25);
+    }
+    .two-66-33 .region-two-66-33-second .panel-pane.key-information .view-resources .views-row,
+    .two-66-33 .region-two-66-33-second .panel-pane .key-information .view-resources .views-row {
+        padding: 0 0 1em;
+    }
+        .two-66-33 .region-two-66-33-second .panel-pane.key-information .view-resources .views-row .views-field,
+        .two-66-33 .region-two-66-33-second .panel-pane .key-information .view-resources .views-row .views-field {
+            margin: .45em 0;
+            color: #000;
+        }
+
+    .two-66-33 .region-two-66-33-second .panel-pane.key-information .block-float,
+    .two-66-33 .region-two-66-33-second .panel-pane .key-information .block-float {
+        clear: both;
+    }
+
+/* Buttons */
+
+.view-resources .views-row .resource-btn {
+    float: right;
+    padding: 15px 0;
+    width: 120px;
+}
+
+.view-resources .views-row a.btn-orange {
+    background: #e4692b;
+    border-radius: 2px;
+    color: #ffffff;
+    display: block;
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.929em;
+    font-weight: bold;
+    padding: 12px 0px;
+    text-align: center;
+    text-shadow: 1px 0px 3px #cb5d26;
+    width: 110;
+}
+
+    .view-resources .views-row a:hover.btn-orange, .view-resources .views-row a:focus.btn-orange {
+        background: #8eb722;
+        text-decoration: none;
+        text-shadow: 0px 1px 2px #61810d;
+    }
+
+/* Subtitle */
+
+.view-resources .views-row .resource-subtitle {
+    color: #53565a !important;
+    font-size: 0.929em !important;
+    margin: 0 0 10px;
+}
+
+/* Icons */
+
+.view-resources .views-row .resource-icon {
+    float: left;
+    text-align: center;
+    margin-right: -90px;
+    padding-right: 15px;
+    width: 75px;
+}
+
+.view-resources .views-row .resource-icon span.icon {
+    display: block;
+    text-align: center;
+}
+
+.view-resources .views-row .resource-icon span.title {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.857em;
+    font-weight: bold;
+}
+
+.view-resources .views-row .views-label {
+    font-weight: bold;
+}
+
+/* Thumbnail */
+
+.key-information .views-row .resource-thumb,
+.view-resources .views-row .resource-thumb {
+    float: left;
+    text-align: left;
+    margin-right: -90px;
+    padding-right: 20px;
+    padding-top: 4px;
+    width: 212px;
+}
+
+.key-information .views-row .resource-thumb {
+    float: none;
+    width: 95%;
+}
+
+.key-information .views-row .resource-thumb img,
+.view-resources .views-row .resource-thumb img {
+    border: 6px solid #FFF;
+    box-shadow: 0px 1px 2px #bebebe;
+}
+
+.key-information .views-row .resource-thumb img {
+    width: 100%;
+}
+
+/* Body */
+
+.view-resources .views-row .resource-body {
+    clear: both;
+    padding: 20px 0 0;
+}
+
+/* =============================================================================
+  ALL RESOURCES
+  ========================================================================== */
+
+.view-resources .views-row .resource-content-inner {
+    margin-left: 90px;
+}
+
+.view-resources .has-btn .resource-content-inner {
+    margin-right: 130px;
+}
+
+/* =============================================================================
+  COLLATERAL RESOURCES
+  ========================================================================== */
+
+/* Type Icon */
+
+.view-resource-collateral-resources .views-row .resource-icon span.title {
+    color: #31c5f4 !important;
+}
+
+/* Subtitle */
+
+.views-field-field-cr-subtitle {
+    color: #53565a !important;
+    font-size: 0.929em !important;
+    margin: 0 0 10px;
+}
+
+/* Publication */
+
+.views-field-field-cr-publication-name {
+    color: #53565a !important;
+    float: left;
+}
+
+.views-field-field-cr-publication-date {
+    color: #53565a !important;
+    float: left;
+}
+
+/* Drill Down */
+.two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-cr-subtitle {
+    padding: 0 0 .5em;
+}
+
+.two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-cr-publication-date {
+    color: #53565A;
+}
+
+/* =============================================================================
+  MAPS AND APPS
+  ========================================================================== */
+
+.view-resource-maps-and-apps .views-row .resource-content-inner {
+    margin-left: 232px;
+}
+
+/* Drill Down */
+.two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-ma-subtitle {
+    padding: 0 0 .5em;
+}
+
+.two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-ma-image {
+    padding: 0;
+}
+    .two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-ma-image img {
+        max-width: 100%;
+    }
+
+.two-66-33 .region-two-66-33-first .panel-pane.pane-node-field-ma-publication-date {
+    font-size: 1.15em;
+    color: #53565A;
+    padding-bottom: 12px;
+}
+
+body.node-type-resource-maps-and-apps .two-66-33 .region-two-66-33-first .panel-pane.pane-node-content {
+    padding: 2.5em 0 0;
+}
+
+/* =============================================================================
+  TEACHING MATERIALS
+  ========================================================================== */
+
+/* Type Icon */
+
+.view-resource-teaching-materials .views-row .resource-icon span.title {
+    color: #8A93CE !important;
+}
+
+.view-resource-teaching-materials .views-row .author-name {
+    padding-bottom: .75em;
+}
+
+.action-wrapper {
+    text-align: center;
+}
+    .action-wrapper input {
+        background: #01BAD1;
+        border-radius: 0 2px 2px 0;
+        color: white;
+        font-size: 0.929em;
+        text-align: center;
+        text-shadow: 0px 1px 1px #01A9BE;
+        margin: 0 10px;
+        width: 120px;
+    }
+    .action-wrapper input:hover {
+        background: #8EB722;
+        text-shadow: 0px 1px 1px #61810D;
+    }
+
+/* =============================================================================
+  TRAINING & EVENTS
+  ========================================================================== */
+
+/* Type Icon */
+
+.view-training-and-events-list-view .views-row .resource-icon span.title {
+    color: #01b9d1 !important;
+}
+
+/* List View - Date */
+
+.view-training-and-events-list-view .views-field-field-training-start-date, .view-resources .views-field-field-training-time-zone {
+    color: #53565A !important;
+}
+
+/* List View - Delivery Language */
+
+.view-training-and-events-list-view .views-field-field-training-delivery-language {
+    color: #01b9d1 !important;
+}
+
+/* Remove spacing between panels */
+body.node-type-events .two-66-33 .region-two-66-33-first .panel-pane,
+body.node-type-training .two-66-33 .region-two-66-33-first .panel-pane {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+    body.node-type-events .two-66-33 .region-two-66-33-first .panel-pane:first-child,
+    body.node-type-training .two-66-33 .region-two-66-33-first .panel-pane:first-child {
+        padding-top: 10px;
+    }
+
+/* Focus Image */
+body.node-type-events .two-66-33 .region-two-66-33-top .panel-pane img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Register Icon */
+
+a.download-button.training-register-now {
+    background-image: url(../images/register.png);
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+
+.views-field .views-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.views-field .location-title {
+    color: #E4692B;
+}
+
+.panel-pane.key-information .views-field.views-field-field-location-address-1 {
+    margin: .75em 0 .5em;
+}
+
+/* Hide Node Reference Titles */
+body.node-type-events .field-type-node-reference .node-inner > h2,
+body.node-type-training .field-type-node-reference .node-inner > h2 {
+    display: none;
+}
+
+/* Registration iFrame */
+
+.page-registration .two-66-33 .region-two-66-33-first .panel-pane, .two-66-33 .region-two-66-33-second .panel-pane {
+    padding: 0;
+}
+
+.registration-iframe {
+    border: 0;
+    min-height: 1440px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* =============================================================================
+  COURSE CATALOG
+  ========================================================================== */
+
+.course-catalog {
+
+}
+
+.course-catalog .accordion-title {
+    padding-right: 40px;
+}
+
+.course-catalog .accordion-body {
+    margin: 0;
+}
+
+.course-catalog .views-row {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 30px;
+}
+
+    .course-catalog .views-row-first {
+    }
+
+    .course-catalog .views-row-last {
+        border-bottom: none;
+    }
+
+.course-catalog .views-row a {
+    color: #292e33;
+    font-family: 'Avenir Heavy';
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+    .course-catalog .views-row a:hover, .course-catalog .views-row a:focus {
+        color: #84ab20;
+        text-decoration: none;  
+    }

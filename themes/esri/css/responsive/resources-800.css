@@ -1,0 +1,37 @@
+.view-resources .views-row .resource-btn {
+	clear: left;
+	float: none;
+}
+
+/* =============================================================================
+  MESSAGE BOX
+  ========================================================================== */
+
+
+/* =============================================================================
+  COLLATERAL RESOURCES
+  ========================================================================== */
+
+.view-resource-collateral-resources .views-row .resource-content-inner {
+	margin-right: 0;
+}
+
+.view-resource-collateral-resources .views-row .resource-btn {
+	margin-left: 90px;
+}
+
+/* =============================================================================
+  TRAINING AND EVENTS
+  ========================================================================== */
+
+.view-training-and-events-list-view .views-row {
+	padding-bottom: 10px;
+}
+
+.view-training-and-events-list-view .views-row .resource-content-inner {
+	margin-right: 0;
+}
+
+.view-training-and-events-list-view .views-row .resource-btn {
+	margin-left: 90px;
+}

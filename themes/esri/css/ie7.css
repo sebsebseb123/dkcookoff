@@ -1,0 +1,139 @@
+/* =============================================================================
+	IE 7 and Below
+	========================================================================== */
+
+/* Yes, we all hate IE7 too. */
+/* Drupal admin tables. */
+#content tr.even th,
+#content tr.even td,
+#content tr.odd th,
+#content tr.odd td {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* Minor fix for primary and secondary tabs in IE */
+ul .primary li a:hover,
+ul .secondary li a:hover {
+  cursor: pointer;
+  color: #555555;
+  text-decoration: none;
+}
+
+.page-message .color-strip .strip-fourth, .content-wrap .color-strip .strip-fourth {
+  width: 24.8%;
+}
+
+/* =============================================================================
+  FORMS
+  ========================================================================== */
+
+a.ui-header-all {
+  display: block;
+  float: right;
+  text-align: right;
+  width: 120px;
+}
+
+/* =============================================================================
+  FOOTER
+  ========================================================================== */
+
+#block-esri_theme_config-newsletter {
+  width: 400px;
+}
+
+.footer-ie7-fix {
+  display: block;
+  height: 8px;
+  line-height: 1px;
+  overflow: hidden;
+}
+
+/* =============================================================================
+  NAVIGATION
+  ========================================================================== */
+
+nav ul.menu li {
+  display: block;
+  float: left;
+  list-style: none;
+}
+
+nav, .nav-inner, .nav-inner > .region, nav ul.menu, nav ul.menu, nav ul.menu li, #block-menu-menu-primary-navigation, #block-menu-menu-primary-navigation > .content, #block-menu-menu-primary-navigation ul.menu li div.submenu {
+  z-index: 50 !important;
+}
+
+/* Tertiary Menu */ 
+
+#block-menu-menu-primary-navigation ul.menu li div.tertiary_menu > ul.menu li {
+  clear: left;
+  float: left;
+  width: 100%;
+}
+
+/* =============================================================================
+  RESOURCES - EXPOSED FILTER STYLES
+  ========================================================================== */
+
+.view-resources .view-filters .form-item-keys input {
+  height: 22px;
+  margin-top: -1px;
+}
+
+.view-resources .view-filters .views-submit-button {
+  width: 90px;
+}
+
+.container-inline-date > .form-item, .container-inline-date input {
+  height: 22px;
+}
+
+.view-resources .view-filters .views-submit-button input, .view-resources .view-filters .views-reset-button input {
+  width: 90px;
+}
+
+/* =============================================================================
+  WEBFORM STYLES
+  ========================================================================== */
+
+/* Text and Textarea */
+
+.webform-component-textarea label {
+  margin-top: 15px;
+}
+
+.webform-client-form .form-textarea {
+  padding-left: 4%;
+  padding-right: 4%;
+  width: 92% !important;
+}
+
+/* File Upload */
+
+.webform-client-form .form-managed-file input[type=text] {
+  width: 80%;
+}
+
+.webform-client-form .form-uploadbtn {
+  position: absolute;
+  top: 0px; right: 0px;
+}
+
+/* Submit Button */
+
+.webform-client-form .form-submit {
+  width: 90px;
+}
+
+/* =============================================================================
+  SHARE THIS REGION
+  ========================================================================== */
+  
+.sharethis-wrapper {
+  min-width: 360px;
+}
+
+.st_twitter_hcount, .st_facebook_hcount, .st_linkedin_hcount,.st_email_hcount {
+  display: block;
+  float: left;
+}

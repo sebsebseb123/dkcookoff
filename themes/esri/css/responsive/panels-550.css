@@ -1,0 +1,47 @@
+/**
+ * @file Responsive panels styling
+ */
+
+.two-66-33 .region.region-two-66-33-first ,
+.two-66-33 .region.region-two-66-33-second {
+  float: left;
+  width: 100%;
+}
+
+/* =============================================================================
+  RELATED RESOURCES
+  ========================================================================== */
+
+.pane-related-resources {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* Pagination */
+
+.pane-related-resources .view-header {
+	margin-right: 20px;
+}
+
+.pane-related-resources .views-row {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pane-related-resources .views-row .resource-content-inner {
+    margin-left: 70px;
+}
+
+.pane-related-resources .views-row .resource-icon {
+	margin-right: -70px;
+	width: 55px;
+}
+
+/* =============================================================================
+  TRAINING AND EVENTS
+  ========================================================================== */
+
+
+.pane-related-events {
+  padding: 0 !important;
+}

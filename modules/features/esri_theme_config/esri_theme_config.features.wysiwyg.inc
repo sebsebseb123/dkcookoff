@@ -99,7 +99,7 @@ function esri_theme_config_wysiwyg_default_profiles() {
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'self',
-      'css_path' => '/profiles/esricanada/themes/esri/css/global.css, %t/css/global.css',
+      'css_path' => '/profiles/dkcookoff/themes/esri/css/global.css, %t/css/global.css',
       'css_classes' => '',
     ),
   );

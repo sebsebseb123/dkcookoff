@@ -11,7 +11,7 @@
  *
  * @see system_install()
  */
-function esricanada_install() {
+function dkcookoff_install() {
   // Enable some standard blocks.
   $default_theme = 'esri';
   $admin_theme = 'rubik';
@@ -95,7 +95,7 @@ function esricanada_install() {
   // Execute all module updates
   $sandbox = array();
   for ($i = 10000; $i < 10099; $i++){
-    $func = 'esricanada_update_'.$i;
+    $func = 'dkcookoff_update_'.$i;
     if (function_exists($func)){
       $func($sandbox);
     }
@@ -106,7 +106,7 @@ function esricanada_install() {
  * Implements hook_update_N().
  *   Enables Admin Menu module.
  */
-function esricanada_update_10000(&$sandbox) {
+function dkcookoff_update_10000(&$sandbox) {
   module_enable(array('admin_menu'));
   drupal_flush_all_caches();
   module_enable(array('admin_menu_toolbar'));
@@ -117,7 +117,7 @@ function esricanada_update_10000(&$sandbox) {
  * Implements hook_update_N().
  *   Enables ESRI and Rubik.
  */
-function esricanada_update_10001(&$sandbox) {
+function dkcookoff_update_10001(&$sandbox) {
 
   theme_enable(array('esri'));
 
@@ -136,7 +136,7 @@ function esricanada_update_10001(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Module Filter
  */
-function esricanada_update_10002(&$sandbox) {
+function dkcookoff_update_10002(&$sandbox) {
   module_enable(array('module_filter'));
   return t('The module filter module has been enabled.');
 }
@@ -145,7 +145,7 @@ function esricanada_update_10002(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Views + Ctools via Views Php.
  */
-function esricanada_update_10003(&$sandbox) {
+function dkcookoff_update_10003(&$sandbox) {
   module_enable(array('views_php'));
   drupal_flush_all_caches();
   return t('The views php, views, and ctool module has been enabled.');
@@ -155,7 +155,7 @@ function esricanada_update_10003(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Better Exposed Filter
  */
-function esricanada_update_10004(&$sandbox) {
+function dkcookoff_update_10004(&$sandbox) {
   module_enable(array('better_exposed_filters'));
   return t('The better exposed filter module has been enabled.');
 }
@@ -164,7 +164,7 @@ function esricanada_update_10004(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Views UI
  */
-function esricanada_update_10005(&$sandbox) {
+function dkcookoff_update_10005(&$sandbox) {
   module_enable(array('views_ui'));
   return t('The views ui module has been enabled.');
 }
@@ -174,7 +174,7 @@ function esricanada_update_10005(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Entity
  */
-function esricanada_update_10006(&$sandbox) {
+function dkcookoff_update_10006(&$sandbox) {
   module_enable(array('entitytokens'));
   module_enable(array('entityreference'));
   module_enable(array('entity_translation_upgrade'));
@@ -186,7 +186,7 @@ function esricanada_update_10006(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Date
  */
-function esricanada_update_10007(&$sandbox) {
+function dkcookoff_update_10007(&$sandbox) {
   module_enable(array('date'));
   module_enable(array('date_popup'));
   module_enable(array('date_views'));
@@ -198,7 +198,7 @@ function esricanada_update_10007(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Features
  */
-function esricanada_update_10008(&$sandbox) {
+function dkcookoff_update_10008(&$sandbox) {
   module_enable(array('features_override'));
   module_enable(array('strongarm'));
   return t('The features module has been enabled.');
@@ -208,7 +208,7 @@ function esricanada_update_10008(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Path Auto
  */
-function esricanada_update_10009(&$sandbox) {
+function dkcookoff_update_10009(&$sandbox) {
   module_enable(array('pathauto'));
   return t('The path auto module has been enabled.');
 }
@@ -217,7 +217,7 @@ function esricanada_update_10009(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Page Title
  */
-function esricanada_update_10010(&$sandbox) {
+function dkcookoff_update_10010(&$sandbox) {
   module_enable(array('page_title'));
   return t('The path auto module has been enabled.');
 }
@@ -226,7 +226,7 @@ function esricanada_update_10010(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Search
  */
-function esricanada_update_10011(&$sandbox) {
+function dkcookoff_update_10011(&$sandbox) {
   module_enable(array('search_config'));
   return t('The search module has been enabled.');
 }
@@ -235,7 +235,7 @@ function esricanada_update_10011(&$sandbox) {
  * Implements hook_update_N().
  *   Enables SmartCrop
  */
-function esricanada_update_10012(&$sandbox) {
+function dkcookoff_update_10012(&$sandbox) {
   module_enable(array('smartcrop'));
   return t('The smartcrop module has been enabled.');
 }
@@ -244,7 +244,7 @@ function esricanada_update_10012(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Scheduler
  */
-function esricanada_update_10013(&$sandbox) {
+function dkcookoff_update_10013(&$sandbox) {
   module_enable(array('scheduler'));
   return t('The scheduler module has been enabled.');
 }
@@ -253,7 +253,7 @@ function esricanada_update_10013(&$sandbox) {
  * Implements hook_update_N().
  *   Enables References
  */
-function esricanada_update_10014(&$sandbox) {
+function dkcookoff_update_10014(&$sandbox) {
   module_enable(array('link'));
   module_enable(array('references'));
   return t('The references module has been enabled.');
@@ -263,7 +263,7 @@ function esricanada_update_10014(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Variable
  */
-function esricanada_update_10015(&$sandbox) {
+function dkcookoff_update_10015(&$sandbox) {
   module_enable(array('variable_admin'));
   module_enable(array('variable_realm'));
   module_enable(array('variable_store'));
@@ -275,7 +275,7 @@ function esricanada_update_10015(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Field Group
  */
-function esricanada_update_10016(&$sandbox) {
+function dkcookoff_update_10016(&$sandbox) {
   module_enable(array(
     'field_group',
     'field_ui',
@@ -289,7 +289,7 @@ function esricanada_update_10016(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Google Analytics
  */
-function esricanada_update_10017(&$sandbox) {
+function dkcookoff_update_10017(&$sandbox) {
   //Google Analytics hook moved down to 56
 }
 
@@ -297,7 +297,7 @@ function esricanada_update_10017(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Media Browser
  */
-function esricanada_update_10018(&$sandbox) {
+function dkcookoff_update_10018(&$sandbox) {
   module_enable(array('media_browser_plus'));
   return t('The media browser plus module has been enabled.');
 }
@@ -306,7 +306,7 @@ function esricanada_update_10018(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Menu
  */
-function esricanada_update_10019(&$sandbox) {
+function dkcookoff_update_10019(&$sandbox) {
   module_enable(array('menu_block'));
   return t('The menu module has been enabled.');
 }
@@ -315,7 +315,7 @@ function esricanada_update_10019(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Multi Block
  */
-function esricanada_update_10020(&$sandbox) {
+function dkcookoff_update_10020(&$sandbox) {
   module_enable(array('multiblock'));
   return t('The multiblock module has been enabled.');
 }
@@ -325,7 +325,7 @@ function esricanada_update_10020(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Webform
  */
-function esricanada_update_10021(&$sandbox) {
+function dkcookoff_update_10021(&$sandbox) {
   module_enable(array('webform'));
   return t('The webform module has been enabled.');
 }
@@ -334,7 +334,7 @@ function esricanada_update_10021(&$sandbox) {
  * Implements hook_update_N().
  *   Enables WYSIWYG
  */
-function esricanada_update_10022(&$sandbox) {
+function dkcookoff_update_10022(&$sandbox) {
   module_enable(array('wysiwyg'));
   return t('The wysiwyg module has been enabled.');
 }
@@ -343,7 +343,7 @@ function esricanada_update_10022(&$sandbox) {
  * Implements hook_update_N().
  *   Enables WorkBench
  */
-function esricanada_update_10023(&$sandbox) {
+function dkcookoff_update_10023(&$sandbox) {
   module_enable(array('workbench'));
   return t('The workbench module has been enabled.');
 }
@@ -352,7 +352,7 @@ function esricanada_update_10023(&$sandbox) {
  * Implements hook_update_N().
  *   Enables Internationalization
  */
-function esricanada_update_10024(&$sandbox) {
+function dkcookoff_update_10024(&$sandbox) {
   module_enable(array('i18n'));
   module_enable(array('i18n_taxonomy'));
   module_enable(array('i18n_block'));
@@ -372,7 +372,7 @@ function esricanada_update_10024(&$sandbox) {
  *   Enables Esri Languages
  */
 
-function esricanada_update_10025(&$sandbox) {
+function dkcookoff_update_10025(&$sandbox) {
   module_enable(array('esri_languages'));
   drupal_flush_all_caches();
   return t('The Esri languages module has been enabled.');
@@ -383,7 +383,7 @@ function esricanada_update_10025(&$sandbox) {
  *   Enables Esri Menus
  */
 
-function esricanada_update_10026(&$sandbox) {
+function dkcookoff_update_10026(&$sandbox) {
   module_enable(array('esri_menus'));
 
   $values = array(
@@ -440,7 +440,7 @@ function esricanada_update_10026(&$sandbox) {
  *   Enables Acquia Connector
  */
 
-function esricanada_update_10027(&$sandbox) {
+function dkcookoff_update_10027(&$sandbox) {
   module_enable(array('acquia_connector'));
   drupal_flush_all_caches();
   return t('The Acquia Connector module has been enabled.');
@@ -451,7 +451,7 @@ function esricanada_update_10027(&$sandbox) {
  *   Enables Node Reference
  */
 
-function esricanada_update_10028(&$sandbox) {
+function dkcookoff_update_10028(&$sandbox) {
   module_enable(array('node_reference'));
   return t('The Node Reference module has been enabled.');
 }
@@ -461,7 +461,7 @@ function esricanada_update_10028(&$sandbox) {
  *   Enables Footer Feature Feature
  */
 
-function esricanada_update_10029(&$sandbox) {
+function dkcookoff_update_10029(&$sandbox) {
   module_enable(array('esri_footer_features'));
   drupal_flush_all_caches();
   return t('The Footer Feature module has been enabled.');
@@ -472,7 +472,7 @@ function esricanada_update_10029(&$sandbox) {
  *   Enables Back Up and Migrate
  */
 
-function esricanada_update_10030(&$sandbox) {
+function dkcookoff_update_10030(&$sandbox) {
   module_enable(array('backup_migrate'));
   return t('The Backup and migrate module has been enabled.');
 }
@@ -482,7 +482,7 @@ function esricanada_update_10030(&$sandbox) {
  *   Enables Link Checker
  */
 
-function esricanada_update_10031(&$sandbox) {
+function dkcookoff_update_10031(&$sandbox) {
   module_enable(array('linkchecker'));
   return t('The Link Checker module has been enabled.');
 }
@@ -492,7 +492,7 @@ function esricanada_update_10031(&$sandbox) {
  *   Enables Boolean
  */
 
-function esricanada_update_10032(&$sandbox) {
+function dkcookoff_update_10032(&$sandbox) {
   module_enable(array('boolean'));
   return t('The boolean module has been enabled.');
 }
@@ -502,7 +502,7 @@ function esricanada_update_10032(&$sandbox) {
  *   Enables Resources Collateral
  */
 
-function esricanada_update_10033(&$sandbox) {
+function dkcookoff_update_10033(&$sandbox) {
   module_enable(array('resource_collateral_resources'));
   drupal_flush_all_caches();
   return t('The resources collateral features has been enabled.');
@@ -513,7 +513,7 @@ function esricanada_update_10033(&$sandbox) {
  *   Enables Esri Exposed Filter
  */
 
-function esricanada_update_10034(&$sandbox) {
+function dkcookoff_update_10034(&$sandbox) {
   module_enable(array('esri_exposed_filter'));
   drupal_flush_all_caches();
   return t('The Esri exposed Filter has been enabled.');
@@ -524,7 +524,7 @@ function esricanada_update_10034(&$sandbox) {
  *   Enables Jquery Update
  */
 
-function esricanada_update_10035(&$sandbox) {
+function dkcookoff_update_10035(&$sandbox) {
   module_enable(array('jquery_update'));
   variable_set('jquery_update_compression_type', 'min');
   variable_set('jquery_update_jquery_cdn', 'none');
@@ -537,7 +537,7 @@ function esricanada_update_10035(&$sandbox) {
  *   Enables Image Field Focus
  */
 
-function esricanada_update_10036(&$sandbox) {
+function dkcookoff_update_10036(&$sandbox) {
   module_enable(array('imagefield_focus'));
   return t('The Image Field Focus has been enabled.');
 }
@@ -547,7 +547,7 @@ function esricanada_update_10036(&$sandbox) {
  *   Enables Resources Maps and Apps
  */
 
-function esricanada_update_10037(&$sandbox) {
+function dkcookoff_update_10037(&$sandbox) {
   module_enable(array('resource_maps_and_apps'));
   drupal_flush_all_caches();
   return t('The resources maps and apps has been enabled.');
@@ -558,7 +558,7 @@ function esricanada_update_10037(&$sandbox) {
  *   Enables Resources Maps and Apps
  */
 
-function esricanada_update_10038(&$sandbox) {
+function dkcookoff_update_10038(&$sandbox) {
   module_enable(array('redirect'));
   drupal_flush_all_caches();
   return t('The redirect module has been enabled.');
@@ -569,7 +569,7 @@ function esricanada_update_10038(&$sandbox) {
  *   Enables Panels
  */
 
-function esricanada_update_10039(&$sandbox) {
+function dkcookoff_update_10039(&$sandbox) {
   module_enable(array('panels'));
   return t('Enable the panels module.');
 }
@@ -579,7 +579,7 @@ function esricanada_update_10039(&$sandbox) {
  *   Enables  wysiwyg Template
  */
 
-function esricanada_update_10040(&$sandbox) {
+function dkcookoff_update_10040(&$sandbox) {
   module_enable(array('wysiwyg_template'));
   return t('Enable the wysiwyg Template module.');
 }
@@ -589,7 +589,7 @@ function esricanada_update_10040(&$sandbox) {
  *   Enables  views_content
  */
 
-function esricanada_update_10041(&$sandbox) {
+function dkcookoff_update_10041(&$sandbox) {
   module_enable(array('views_content'));
   return t('Enable the views_content module.');
 }
@@ -598,7 +598,7 @@ function esricanada_update_10041(&$sandbox) {
  *   Enable the Teaching Materials feature.
  */
 
-function esricanada_update_10042(&$sandbox) {
+function dkcookoff_update_10042(&$sandbox) {
   module_enable(array('resource_teaching_materials'));
   return t('Enable the Teaching Materials feature.');
 }
@@ -607,7 +607,7 @@ function esricanada_update_10042(&$sandbox) {
  *   Add Primary Navigation French in Responsive Multiblock
  */
 
-function esricanada_update_10043(&$sandbox) {
+function dkcookoff_update_10043(&$sandbox) {
 
   //Insert Multi Block
   $query = db_insert('multiblock')->fields(array(
@@ -628,7 +628,7 @@ function esricanada_update_10043(&$sandbox) {
  *   Enables  phone
  */
 
-function esricanada_update_10044(&$sandbox) {
+function dkcookoff_update_10044(&$sandbox) {
   module_enable(array('phone'));
   return t('Enable the phone module.');
 }
@@ -639,7 +639,7 @@ function esricanada_update_10044(&$sandbox) {
  *   Enables  webform_phone
  */
 
-function esricanada_update_10045(&$sandbox) {
+function dkcookoff_update_10045(&$sandbox) {
   module_enable(array('webform_phone'));
   return t('Enable the webform_phone module.');
 }
@@ -649,7 +649,7 @@ function esricanada_update_10045(&$sandbox) {
  *   Enables  uuid
  */
 
-function esricanada_update_10046(&$sandbox) {
+function dkcookoff_update_10046(&$sandbox) {
   module_enable(array('uuid'));
   return t('Enable the uuid module.');
 }
@@ -659,7 +659,7 @@ function esricanada_update_10046(&$sandbox) {
  *   Enables  node_export
  */
 
-function esricanada_update_10047(&$sandbox) {
+function dkcookoff_update_10047(&$sandbox) {
   module_enable(array('node_export'));
   return t('Enable the node_export module.');
 }
@@ -669,7 +669,7 @@ function esricanada_update_10047(&$sandbox) {
  *   Enables  node_export_features
  */
 
-function esricanada_update_10048(&$sandbox) {
+function dkcookoff_update_10048(&$sandbox) {
   module_enable(array('node_export_features'));
   return t('Enable the node_export_features module.');
 }
@@ -679,7 +679,7 @@ function esricanada_update_10048(&$sandbox) {
  *   Enables  esri_webform_export
  */
 
-function esricanada_update_10049(&$sandbox) {
+function dkcookoff_update_10049(&$sandbox) {
   //Disabled - was used for demo purpose
   //module_enable(array('esri_webform_export'));
   //drupal_flush_all_caches();
@@ -690,7 +690,7 @@ function esricanada_update_10049(&$sandbox) {
  *   Enable the Training features.
  */
 
-function esricanada_update_10050(&$sandbox) {
+function dkcookoff_update_10050(&$sandbox) {
   module_enable(array('training_and_events_list_view', 'training_content_types'));
   return t('Enable the Training features.');
 }
@@ -699,7 +699,7 @@ function esricanada_update_10050(&$sandbox) {
  *   Upping the jpg conversion quality.
  */
 
-function esricanada_update_10051(&$sandbox) {
+function dkcookoff_update_10051(&$sandbox) {
   variable_set('image_jpeg_quality', 100);
   return t('Upping the jpg conversion quality.');
 }
@@ -708,7 +708,7 @@ function esricanada_update_10051(&$sandbox) {
  *   Enable Events Content Type
  */
 
-function esricanada_update_10052(&$sandbox) {
+function dkcookoff_update_10052(&$sandbox) {
   module_enable(array('events_content_type'));
   return t('Events enabled');
 }
@@ -717,7 +717,7 @@ function esricanada_update_10052(&$sandbox) {
  *   Enable Esri Homepage Feature
  */
 
-function esricanada_update_10053(&$sandbox) {
+function dkcookoff_update_10053(&$sandbox) {
   module_enable(array('esri_homepage'));
 
   drupal_flush_all_caches();
@@ -728,7 +728,7 @@ function esricanada_update_10053(&$sandbox) {
  *   Enable Share this module
  */
 
-function esricanada_update_10054(&$sandbox) {
+function dkcookoff_update_10054(&$sandbox) {
   // Enable content types to show sharethis block.
   $node_type_array = node_type_get_types();
   $node_type_options = array();
@@ -797,7 +797,7 @@ function esricanada_update_10054(&$sandbox) {
  *   Enable Generic Pages Feature
  */
 
-function esricanada_update_10055(&$sandbox) {
+function dkcookoff_update_10055(&$sandbox) {
   module_enable(array('esri_generic_pages'));
   return t('Generic Pages enabled');
 }
@@ -806,7 +806,7 @@ function esricanada_update_10055(&$sandbox) {
  *   Enable Esri Related Collateral Resouces Feature
  */
 
-function esricanada_update_10056(&$sandbox) {
+function dkcookoff_update_10056(&$sandbox) {
   module_enable(array('esri_related_collateral_resources'));
 
   drupal_flush_all_caches();
@@ -817,7 +817,7 @@ function esricanada_update_10056(&$sandbox) {
  *   Enable PHP Filter
  */
 
-function esricanada_update_10057(&$sandbox) {
+function dkcookoff_update_10057(&$sandbox) {
   module_enable(array('php'), FALSE);
   return t('PHP Filter enabled');
 }
@@ -826,7 +826,7 @@ function esricanada_update_10057(&$sandbox) {
  *   Enables Google Analytics
  */
 
-function esricanada_update_10058(&$sandbox) {
+function dkcookoff_update_10058(&$sandbox) {
   module_enable(array('googleanalytics'), FALSE);
 
   // set google analytics account based on acquia hosting env.
@@ -853,7 +853,7 @@ function esricanada_update_10058(&$sandbox) {
  *   Enables Attachment Links module
  */
 
-function esricanada_update_10059(&$sandbox) {
+function dkcookoff_update_10059(&$sandbox) {
   module_enable(array('attachment_links'), FALSE);
   drupal_flush_all_caches();
   return t('The Attachment Links module has been enabled.');
@@ -863,7 +863,7 @@ function esricanada_update_10059(&$sandbox) {
  *   Enables filemanager module
  */
 
-function esricanada_update_10060(&$sandbox) {
+function dkcookoff_update_10060(&$sandbox) {
   module_enable(array('filemanager'), FALSE);
   return t('The MCFileManager module has been enabled.');
 }
@@ -872,7 +872,7 @@ function esricanada_update_10060(&$sandbox) {
  *   Enables Training - Course Catalog
  */
 
-function esricanada_update_10061(&$sandbox) {
+function dkcookoff_update_10061(&$sandbox) {
   module_enable(array('training_course_catalog'), FALSE);
   return t('Training - Course Catalog module has been enabled.');
 }
@@ -881,7 +881,7 @@ function esricanada_update_10061(&$sandbox) {
  *   Enables Esri Partners feature
  */
 
-function esricanada_update_10062(&$sandbox) {
+function dkcookoff_update_10062(&$sandbox) {
   module_enable(array('esri_partners'), FALSE);
   return t('Esri Partners feature enabled.');
 }

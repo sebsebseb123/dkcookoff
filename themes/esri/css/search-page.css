@@ -1,0 +1,227 @@
+/* 
+    Document   : search
+    Created on : Aug 22, 2012, 7:53:16 AM
+    Author     : Imran
+    Description:
+        Styles for search page.
+*/
+
+.search-results .title {
+  font-size: 1.5056em;
+}
+.search-results li {
+    border-bottom: 1px solid #ECECEC;
+  margin-bottom: 1em;
+}
+.search-results .search-snippet-info {
+  padding-left: 0; /* LTR */
+}
+.search-results .search-info {
+  color: #53565a;
+  font-family: "Helvetica";
+  font-size: 0.85em;
+  margin-bottom: 1.375em;
+  margin-top: 0.2em;
+}
+
+.search-results .search-snippet {
+    margin-bottom: 1.25em;
+}
+
+h3.title {
+    font-family: 'Avenir Heavy';
+    margin-bottom:0;
+}
+
+h3.title a:link, h3.title a:visited {
+    border-bottom: 1px solid #bec0c1;
+    color: #292E33;
+}
+
+h3.title a:hover, h3.title a:active {
+    border-bottom: 1px solid #e4edc9;
+    color: #698d0c;
+    text-decoration: none;
+}
+
+/*span.underline {
+    border-bottom: 1px solid #e4edc9;
+}*/
+
+ul.apachesolr_search-results {
+    padding: 20px 10px;
+}
+
+/* Side bar filters */
+.block-accordion-blocks {
+	background-image: url(../images/search/menus/bg.png);
+	background-repeat: no-repeat;
+	border-top: 3px solid #01BAD1;
+	width: 230px;
+	height: 606px;
+}
+
+
+.accordion_blocks_container {
+    font-family: 'Georgia';
+}
+
+.accordion_blocks_container h2 {
+    border-bottom: 1px solid #d3d3d3;
+    font-family: 'Georgia';
+    font-size: 1.087em;
+    font-style:italic;
+	margin-left: 10px;
+	margin-right: 8px;
+    /*padding-bottom: 0.750em;*/
+}
+
+.accordion_blocks_container ul li {
+    margin-left: 1.7em;
+	/*margin-left: 0;*/
+}
+
+.accordion_blocks_container ul li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0.4em 1.1em;
+}
+
+.accordion_blocks_container ul li.facetapi-active {
+    color: #009AEE;
+    border-left: 3px solid #4083A7;
+    background-color: #D9F0FC;
+    font-style: italic;
+    font-weight: bold;
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0.62em 1.1em;
+}
+
+.accordion_blocks_container ul li a {
+    color: #292e33;
+}
+
+/* Search Form */
+#search-form .form-text {
+    background: #ebebeb;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    float: left;
+    font-size: 1em;
+    font-style: italic;
+    height: 33px;
+    padding: 0px 10px;
+    width: 56%;
+}
+  
+#search-form .form-submit {
+    background: #01bad1 url(../images/search-btn-bg.png) center no-repeat;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    float: left;
+    height: 33px;
+    text-indent: -2000px;
+    width: 33px;
+}
+
+#search-form .form-submit:hover, #block-search-form .form-submit:focus {
+    background: #009aee url(../images/search-btn-bg.png) center no-repeat;
+}
+  
+#search-form .form-item-retain-filters,
+.apachesolr_search_noresults {
+    padding-top: 10px;
+    clear: both;
+    display: block;
+}
+
+
+  
+/* Accordion Filter Menus */ 
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #20A7F0;
+}
+
+.ui-state-hover a, .ui-state-hover a:hover {
+	color: #20A7F0;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #20A7F0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background: none;
+	/*background-color: #ffffff;*/
+}
+
+
+.ui-corner-all, .ui-corner-bottom {
+	border-radius: 0px;
+}
+
+
+
+/*
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+background-image: url('../images/search/menus/arrow-left.png');
+}
+*/
+.ui-state-default .ui-icon {
+background-image: url('../images/search/menus/arrow-left.png');
+width: 8px;
+height: 12px;
+}
+
+.ui-icon-triangle-1-e {
+background-position: center left;
+}
+
+.ui-state-active .ui-icon {
+ background-image: url('../images/search/menus/arrow-down.png');
+ width: 12px;
+ height: 9px;
+}
+
+.ui-icon-triangle-1-s {
+background-position: left center;
+}
+
+.ui-accordion .ui-accordion-header .ui-icon {
+	left: 0;
+	top: 55%;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	background:none;
+	border: none;
+}
+
+.ui-widget-content {
+	border: none;
+	background: none;
+}
+
+.ui-accordion .ui-accordion-content {
+	border-bottom: 1px solid #d3d3d3;
+	margin-right: 8px;
+	margin-left: 10px;
+	overflow: hidden !important;
+	padding-right: 0;
+}
+
+/*
+.ui-accordion-icons .ui-accordion-header a {
+	padding-left: 1.3em;
+}
+*/
+
+.ui-accordion .ui-accordion-header a {
+	padding: .6em .5em .5em 1.1em;
+}

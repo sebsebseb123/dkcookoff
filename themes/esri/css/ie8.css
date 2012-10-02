@@ -1,0 +1,118 @@
+/* =============================================================================
+	IE 8 and Below
+	========================================================================== */
+
+#page {
+	min-width: 1040px;
+}
+
+/* =============================================================================
+  NAVIGATION
+  ========================================================================== */
+
+#block-menu-menu-primary-navigation ul.menu li div.submenu {
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+/* =============================================================================
+  FORMS
+  ========================================================================== */
+
+input {
+	height: 23px;
+	padding-top: 10px;
+}
+
+.ui-select .ui-btn-icon-right.ui-li-has-count .ui-li-count {
+	top: 65%;
+}
+
+/* =============================================================================
+  RESOURCES - EXPOSED FILTER STYLES
+  ========================================================================== */
+
+.view-resources .view-filters .views-submit-button {
+	width: 120px;
+}
+
+.view-resources .view-filters .views-submit-button input, .view-resources .view-filters .views-reset-button input {
+	height: 33px;
+	padding-top: 0;
+	text-align: center;
+}
+
+/* =============================================================================
+  FOOTER
+  ========================================================================== */
+
+#block-esri_theme_config-newsletter input.ea {
+	height: 25px;
+	padding-top: 8px;
+}
+
+#block-esri_theme_config-newsletter input.submit {
+	height: 33px;
+	padding-top: 0px;
+}
+
+/* =============================================================================
+  WEBFORM STYLES
+  ========================================================================== */
+
+.webform-component > label {
+  display: block;
+  float: left;
+  padding-top: 9px;
+}
+
+.webform-component-checkboxes > label, .webform-component-radios > label {
+	padding-top: 0;
+}
+
+/* File Upload */
+
+.webform-client-form .form-managed-file {
+	float: left;
+	height: 33px;
+	overflow: hidden;
+	width: 55%;
+}
+
+.webform-client-form .form-managed-file input[type=text] {
+	height: 33px;
+	padding-top: 9px;
+}
+
+.webform-client-form .form-uploadbtn {
+	height: 33px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+div.fakefile {
+	position: static;
+}
+
+input.file {
+	font-size: 120px;
+	height: 40px;
+	width: 400px;
+	position: absolute;
+	top: 0px; left: 10px;
+	z-index: 2;
+}
+
+/* Checkboxes & Radio */
+
+.form-type-checkbox input, .form-type-radio input {
+	padding-top: 0;
+}
+
+/* Submit Button */
+
+.webform-client-form .form-submit {
+	height: 33px;
+	padding-top: 0;
+	text-align: center;
+}

@@ -1,0 +1,87 @@
+/* =============================================================================
+  WEBFORM STYLES
+  ========================================================================== */
+
+.webform-client-form label {
+	display: block;
+	padding-bottom: 8px;
+	text-align: left;
+	width: 100%;
+}
+
+/* Select and Jquery Mobile */
+
+.webform-component-select {
+	width: 100%;
+}
+
+.webform-component-select div.ui-select {
+	width: 100%;
+}
+
+.webform-component-select div.ui-select .ui-btn-icon-right .ui-btn-inner, .webform-component-select div.ui-select .ui-li-has-count .ui-btn-inner {
+	max-width: 500px;
+}
+
+/* Checkboxes & Radio */
+
+.form-checkboxes .form-item, .form-radios .form-item {
+	margin: 8px 0;
+}
+
+.form-type-checkbox label, .form-type-radio label {
+	display: inline;
+	width: auto;
+}
+
+.webform-component-radios .form-radios {
+	margin-left: 0;
+}
+
+div.form-type-radio {
+	display: block;
+}
+
+
+/* Text and Textarea */
+
+.webform-component-textarea label {
+	margin-top: 0;
+}
+
+.webform-component-phone .form-text,
+.webform-client-form .form-text {
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 92%;
+}
+
+/* File Upload */
+
+input.file {
+	width: 100%;
+}
+
+.webform-client-form .form-managed-file input[type=text] {
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 58%;
+}
+
+.webform-client-form .form-uploadbtn {
+	margin: 0;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 34%;
+}
+
+/* Date */
+
+.webform-client-form .webform-datepicker {
+	width: 100%;
+}
+
+.webform-client-form .webform-datepicker .form-item {
+	margin-right: 2%;
+	width: 32%;
+}

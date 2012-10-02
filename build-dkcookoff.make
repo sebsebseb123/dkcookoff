@@ -3,7 +3,7 @@ core = 7.x
 
 includes[] = drupal-org-core.make
 
-projects[esricanada][type] = profile
-projects[esricanada][download][type] = git
-projects[esricanada][download][url] = git@github.com:myplanetdigital/esricanada.git
-projects[esricanada][download][revision] = develop
+projects[dkcookoff][type] = profile
+projects[dkcookoff][download][type] = git
+projects[dkcookoff][download][url] = git@github.com:myplanetdigital/dkcookoff.git
+projects[dkcookoff][download][revision] = develop

@@ -1,0 +1,32 @@
+/* =============================================================================
+  ACCESSIBILITY STYLES
+  ========================================================================== */
+
+/* Apply to links you want to show on tab focus */
+a:link.access-link, a:hover.access-link, a:visited.access-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+a:active.access-link, a:focus.access-link {
+  display: block;
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+abbr {
+    border-bottom: none;
+    cursor: default;
+  }
+
+.jumptarget {
+  display: block; 
+  position: relative;
+  top: -73px;
+  margin-left: -5000em; 
+}

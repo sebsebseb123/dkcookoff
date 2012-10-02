@@ -118,15 +118,15 @@ IF YOU ACCEPT THE TERMS AND CONDITIONS OF THIS MASTER DATA USE AGREEMENT, PLEASE
 
 IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS MASTER DATA USE AGREEMENT PLEASE SUBMIT AN “I DO NOT AGREE” RESPONSE IN WHICH CASE YOU WILL NOT BE PERMITTED TO ACCESS AND USE THE ARCCANADA 4 DATA RESOURCES.
 
-The data available for download from ESRI Canada’s ArcCanada 4 Online Resource Centre (“ArcCanada 4 Data”) is COPYRIGHTED data and shall only be used in your educational institution.
+The data available for download from Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre (“ArcCanada 4 Data”) is COPYRIGHTED data and shall only be used in your educational institution.
 
-You are granted a non-exclusive, non-assignable and revocable licence to use the ArcCanada 4 Data within your organization or at your home (educators ONLY) with the bundle software (ArcView or ArcVoyager). However you may NOT reproduce, reprint, sell, sublease, rent, loan, give away, or disseminate the ArcCanada 4 Data or any analysis produced using the ArcCanada 4 Data to anyone outside your organization, without prior written consent from ESRI Canada Limited. This includes, but is not limited to, complete tabular printouts and computer readable files extracted in any way, in whole or in part.
+You are granted a non-exclusive, non-assignable and revocable licence to use the ArcCanada 4 Data within your organization or at your home (educators ONLY) with the bundle software (ArcView or ArcVoyager). However you may NOT reproduce, reprint, sell, sublease, rent, loan, give away, or disseminate the ArcCanada 4 Data or any analysis produced using the ArcCanada 4 Data to anyone outside your organization, without prior written consent from Drupal Kitchen Cookoff Limited. This includes, but is not limited to, complete tabular printouts and computer readable files extracted in any way, in whole or in part.
 
 For avoidance of doubt students, library patrons, or anyone not directly employed by your organization may use the ArcCanada 4 Data while at your school or library, but may not take any part of this ArcCanada 4 Data off the premises.
 
 FOR AVOIDANCE OF DOUBT USERS CANNOT USE THE ARCCANADA 4 DATA FOR COMMERCIAL PURPOSES - IT IS FOR EDUCATIONAL USE ONLY.
 
-ArcCanada 4 Data also includes data acquired by ESRI Canada from the following third party data sources:
+ArcCanada 4 Data also includes data acquired by Drupal Kitchen Cookoff from the following third party data sources:
 
 1.      Natural Resources Canada (NRCAN) – The data source for GeoGratis and GeoBase® datasets.
 
@@ -144,7 +144,7 @@ ArcCanada 4 Data also includes data acquired by ESRI Canada from the following t
 
 8.      Niagara Escarpment Commission (NEC)– The data source for NEC Datasets.
 
-There are additional data use terms and conditions that each of the above listed data sources and ESRI Canada require you to comply with to ensure lawful use of any such third party data included within the ArcCanada 4 Data Resource.
+There are additional data use terms and conditions that each of the above listed data sources and Drupal Kitchen Cookoff require you to comply with to ensure lawful use of any such third party data included within the ArcCanada 4 Data Resource.
 
 The applicable additional data use terms and conditions for each of the data sources noted above are provided under the following Schedules which are hereby incorporated under this agreement:
 
@@ -156,23 +156,23 @@ The applicable additional data use terms and conditions for each of the data sou
 
 SCHEDULE 1
 
-Additional Data Use Terms and Conditions for GeoBase® Data sourced by ESRI Canada from NRCAN:
+Additional Data Use Terms and Conditions for GeoBase® Data sourced by Drupal Kitchen Cookoff from NRCAN:
 
-(i)                The user of GeoBase® data (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner is the owner, or a licensee, of intellectual property rights in GeoBase® data and has licensed to ESRI Canada certain rights to the GeoBase® data, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)                The user of GeoBase® data (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner is the owner, or a licensee, of intellectual property rights in GeoBase® data and has licensed to Drupal Kitchen Cookoff certain rights to the GeoBase® data, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)              The ArcCanada 4 Data Licensee acknowledges and agrees that GeoBase® is the data source for all GeoBase® data.
 
-(iii)             The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the GeoBase® data available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by GeoBase® of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(iii)             The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the GeoBase® data available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by GeoBase® of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(iv)             The ArcCanada 4 Data Licensee acknowledges and agrees that that the GeoBase®  data is provided “as-is” and that Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the GeoBase® data and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the GeoBase® data. Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s GeoBase® data.
+(iv)             The ArcCanada 4 Data Licensee acknowledges and agrees that that the GeoBase®  data is provided “as-is” and that Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the GeoBase® data and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the GeoBase® data. Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s GeoBase® data.
 
-(v)              The ArcCanada 4 Data Licensee shall have no recourse against Canada or ESRI Canada, whether by way of any suit or action, for any loss, liability, damage or cost that the GeoBase® User may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the GeoBase® data.
+(v)              The ArcCanada 4 Data Licensee shall have no recourse against Canada or Drupal Kitchen Cookoff, whether by way of any suit or action, for any loss, liability, damage or cost that the GeoBase® User may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the GeoBase® data.
 
-(vi)             The ArcCanada 4 Data Licensee shall indemnify Canada and ESRI Canada and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the GeoBase® data.
+(vi)             The ArcCanada 4 Data Licensee shall indemnify Canada and Drupal Kitchen Cookoff and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the GeoBase® data.
 
-(vii)            The ArcCanada 4 Data Licensee’s liability to indemnify Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada or ESRI Canada from exercising any other rights under law.
+(vii)            The ArcCanada 4 Data Licensee’s liability to indemnify Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(viii)          ESRI Canada shall have the immediate right to terminate all data user rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(viii)          Drupal Kitchen Cookoff shall have the immediate right to terminate all data user rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
  
 
@@ -184,11 +184,11 @@ SCHEDULE 2
 
  
 
-Additional Data Use Terms and Conditions for GeoGratis Data sourced by ESRI Canada from NRCAN:
+Additional Data Use Terms and Conditions for GeoGratis Data sourced by Drupal Kitchen Cookoff from NRCAN:
 
  
 
-(i)                The user of GeoGratis data (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner is the owner, or a licensee, of intellectual property rights in GeoGratis data and has licensed to ESRI Canada certain rights to the GeoGratis data, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)                The user of GeoGratis data (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner is the owner, or a licensee, of intellectual property rights in GeoGratis data and has licensed to Drupal Kitchen Cookoff certain rights to the GeoGratis data, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)              The ArcCanada 4 Data Licensee acknowledges and agrees that the following is the applicable  data source copyright notice for all GeoGratis data :
 
@@ -198,33 +198,33 @@ Additional Data Use Terms and Conditions for GeoGratis Data sourced by ESRI Cana
 
  
 
-(iii)             The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the GeoGratis data available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by GeoGratis of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(iii)             The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the GeoGratis data available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by GeoGratis of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(iv)             The ArcCanada 4 Data Licensee acknowledges and agrees that that the GeoGratis data is provided “as-is” and that Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the GeoGratis data and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the GeoGratis data. Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s GeoGratis data.
+(iv)             The ArcCanada 4 Data Licensee acknowledges and agrees that that the GeoGratis data is provided “as-is” and that Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the GeoGratis data and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the GeoGratis data. Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s GeoGratis data.
 
-(v)              The ArcCanada 4 Data Licensee shall have no recourse against Canada or ESRI Canada, whether by way of any suit or action, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee’s possession or use of the GeoGratis data.
+(v)              The ArcCanada 4 Data Licensee shall have no recourse against Canada or Drupal Kitchen Cookoff, whether by way of any suit or action, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee’s possession or use of the GeoGratis data.
 
-(vi)             The ArcCanada 4 Data Licensee shall indemnify Canada and ESRI Canada and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the GeoGratis data.
+(vi)             The ArcCanada 4 Data Licensee shall indemnify Canada and Drupal Kitchen Cookoff and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the GeoGratis data.
 
-(vii)            The ArcCanada 4 Data Licensee’s liability to indemnify Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada or ESRI Canada from exercising any other rights under law.
+(vii)            The ArcCanada 4 Data Licensee’s liability to indemnify Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(viii)          ESRI Canada shall have the immediate right to terminate all data use rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(viii)          Drupal Kitchen Cookoff shall have the immediate right to terminate all data use rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
 SCHEDULE 3
 
  
 
-Additional Data Use Terms and Conditions for AAFC Datasets sourced by ESRI Canada from AAFC:
+Additional Data Use Terms and Conditions for AAFC Datasets sourced by Drupal Kitchen Cookoff from AAFC:
 
  
 
-(i)                The user of AAFC Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner, or a licensee, of intellectual property rights in AAFC Datasets (the “Canada Digital Data”) and has licensed to ESRI Canada certain rights to the AAFC Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)                The user of AAFC Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) is the owner, or a licensee, of intellectual property rights in AAFC Datasets (the “Canada Digital Data”) and has licensed to Drupal Kitchen Cookoff certain rights to the AAFC Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
-(ii)              ArcCanada 4 Data Licensee’s right to use the Canada Digital Data is subject to the ArcCanada 4 Data Licensee including and maintaining on all reproductions of the Canada Digital Data, as well as all metadata that was provided ESRI Canada with the Canada Digital Data, the following notice:
+(ii)              ArcCanada 4 Data Licensee’s right to use the Canada Digital Data is subject to the ArcCanada 4 Data Licensee including and maintaining on all reproductions of the Canada Digital Data, as well as all metadata that was provided Drupal Kitchen Cookoff with the Canada Digital Data, the following notice:
 
  
 
-“Reproduced and distributed with the permission of ESRI Canada, authorized licensee of Agriculture and Agri-Food Canada."
+“Reproduced and distributed with the permission of Drupal Kitchen Cookoff, authorized licensee of Agriculture and Agri-Food Canada."
 
  
 
@@ -246,17 +246,17 @@ Additional Data Use Terms and Conditions for AAFC Datasets sourced by ESRI Canad
 
 (vi)             ArcCanada 4 Data Licensee shall not merge or link the Canada Digital Data with any product or database in such a fashion that gives the appearance that ArcCanada 4 Data Licensee may have received, or had access to, information held by Canada about any identifiable individual, family, household, organization or business.
 
-(vii)            ArcCanada 4 Data Licensee acknowledges and agrees that Canada or ESRI Canada has made no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Canada digital data and has expressly disclaimed any implied warranty of merchantability or fitness for a particular purpose of the Canada digital data.
+(vii)            ArcCanada 4 Data Licensee acknowledges and agrees that Canada or Drupal Kitchen Cookoff has made no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Canada digital data and has expressly disclaimed any implied warranty of merchantability or fitness for a particular purpose of the Canada digital data.
 
-(viii)          ArcCanada 4 Data Licensee shall have no recourse against Canada or ESRI Canada , whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Canada digital data.
+(viii)          ArcCanada 4 Data Licensee shall have no recourse against Canada or Drupal Kitchen Cookoff , whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Canada digital data.
 
-(ix)             ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Canada digital data available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(ix)             ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Canada digital data available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(x)              The ArcCanada 4 Data Licensee shall indemnify Canada and ESRI Canada and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the Canada digital data.
+(x)              The ArcCanada 4 Data Licensee shall indemnify Canada and Drupal Kitchen Cookoff and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the Canada digital data.
 
-(xi)             The ArcCanada 4 Data Licensee’s liability to indemnify Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada or ESRI Canada from exercising any other rights under law.
+(xi)             The ArcCanada 4 Data Licensee’s liability to indemnify Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xii)            ESRI Canada shall have the immediate right to terminate all data use rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xii)            Drupal Kitchen Cookoff shall have the immediate right to terminate all data use rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
  
 
@@ -268,9 +268,9 @@ SCHEDULE 4
 
  
 
-Additional Data Use Terms and Conditions for the Electoral District Boundaries (2003 Representation Order) and Polling Division Boundaries (39th General Election) Datasets (the “Elections Canada Datasets”) sourced by ESRI Canada from Elections Canada:
+Additional Data Use Terms and Conditions for the Electoral District Boundaries (2003 Representation Order) and Polling Division Boundaries (39th General Election) Datasets (the “Elections Canada Datasets”) sourced by Drupal Kitchen Cookoff from Elections Canada:
 
-(i)                The user of Elections Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the Elections Canada Datasets and other rights pertaining in any way to Elections Canada Datasets as used or otherwise made available under ESRI Canada’s ArcCanada 4 Online Resource Centre and has licensed to ESRI Canada certain rights to the Elections Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)                The user of Elections Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the Elections Canada Datasets and other rights pertaining in any way to Elections Canada Datasets as used or otherwise made available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre and has licensed to Drupal Kitchen Cookoff certain rights to the Elections Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)              The ArcCanada 4 Data Licensee acknowledges and agrees that the following is the applicable  data source copyright notice for the Elections Canada Datasets :
 
@@ -280,7 +280,7 @@ Additional Data Use Terms and Conditions for the Electoral District Boundaries (
 
  
 
-(iii)             ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Elections Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre must not:
+(iii)             ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Elections Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre must not:
 
 (a)          be in an undignified context;
 
@@ -302,23 +302,23 @@ The violation of any of the above criteria renders ArcCanada 4 Data Licensee’s
 
  
 
-(iv)             ArcCanada 4 Data Licensee acknowledges and agrees that Elections Canada or ESRI Canada may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Elections Canada Datasets being used by the ArcCanada 4 Data Licensee in order to permit Elections Canada or ESRI Canada to inspect the Elections Canada Datasets and to verify its conformity with the terms and conditions of its permitted use.
+(iv)             ArcCanada 4 Data Licensee acknowledges and agrees that Elections Canada or Drupal Kitchen Cookoff may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Elections Canada Datasets being used by the ArcCanada 4 Data Licensee in order to permit Elections Canada or Drupal Kitchen Cookoff to inspect the Elections Canada Datasets and to verify its conformity with the terms and conditions of its permitted use.
 
 (v)              All copyright, other proprietary notices of Canada and metadata appearing on or incorporated into the Elections Canada Datasets, as well as any and all conditions of use associated with the Elections Canada Datasets, shall be incorporated and maintained on all reproductions thereof.
 
-(vi)             ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Elections Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Elections Canada Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Elections Canada Datasets.  Canada, Elections Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the Elections Canada Datasets.
+(vi)             ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Elections Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Elections Canada Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Elections Canada Datasets.  Canada, Elections Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the Elections Canada Datasets.
 
-(vii)            ArcCanada 4 Data Licensee shall have no recourse against Canada, Elections Canada or ESRI Canada, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Elections Canada Datasets.
+(vii)            ArcCanada 4 Data Licensee shall have no recourse against Canada, Elections Canada or Drupal Kitchen Cookoff, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Elections Canada Datasets.
 
-(viii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Elections Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Elections Canada of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(viii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Elections Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Elections Canada of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(ix)             ArcCanada 4 Data Licensee acknowledges and agrees that any of ESRI Canada’s interpretations and/or commentary to the Elections Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre are the sole responsibility and choice of ESRI Canada and shall not be construed as an endorsement by Canada or Elections Canada of such ESRI Canada interpretations and/or commentary to the Elections Canada Datasets.
+(ix)             ArcCanada 4 Data Licensee acknowledges and agrees that any of Drupal Kitchen Cookoff’s interpretations and/or commentary to the Elections Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre are the sole responsibility and choice of Drupal Kitchen Cookoff and shall not be construed as an endorsement by Canada or Elections Canada of such Drupal Kitchen Cookoff interpretations and/or commentary to the Elections Canada Datasets.
 
-(x)              The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, Elections Canada and ESRI Canada, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the Elections Canada Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement .
+(x)              The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, Elections Canada and Drupal Kitchen Cookoff, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the Elections Canada Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement .
 
-(xi)             The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Election Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada, Elections Canada or ESRI Canada from exercising any other rights under law.
+(xi)             The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Election Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada, Elections Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xiii)          All data user rights granted by ESRI Canada shall automatically terminate without notice if ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xiii)          All data user rights granted by Drupal Kitchen Cookoff shall automatically terminate without notice if ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
  
 
@@ -332,53 +332,53 @@ SCHEDULE 5
 
  
 
-Additional Data Use Terms and Conditions for Historical Atlas of Canada data and geographic digital files (“Historical Atlas of Canada Datasets”) sourced by ESRI Canada from University of Toronto:
+Additional Data Use Terms and Conditions for Historical Atlas of Canada data and geographic digital files (“Historical Atlas of Canada Datasets”) sourced by Drupal Kitchen Cookoff from University of Toronto:
 
-(i)            The user of Historical Atlas of Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that the GIS and Cartography Office and the University of Toronto is the owner is the owner, or a licensee, of intellectual property rights in Historical Atlas of Canada Datasets and has licensed to ESRI Canada certain rights to the Historical Atlas of Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)            The user of Historical Atlas of Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that the GIS and Cartography Office and the University of Toronto is the owner is the owner, or a licensee, of intellectual property rights in Historical Atlas of Canada Datasets and has licensed to Drupal Kitchen Cookoff certain rights to the Historical Atlas of Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)           The ArcCanada 4 Data Licensee acknowledges and agrees that University of Toronto and the Historical Atlas of Canada Project are the data providers for all Historical Atlas of Canada Datasets.
 
-(iii)          The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Historical Atlas of Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall be only for the purposes of ESRI Canada’s ArcCanada 4 Online project and shall not be construed as an endorsement by University of Toronto of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(iii)          The ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Historical Atlas of Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall be only for the purposes of Drupal Kitchen Cookoff’s ArcCanada 4 Online project and shall not be construed as an endorsement by University of Toronto of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(iv)          The ArcCanada 4 Data Licensee acknowledges and agrees that that the Historical Atlas of Canada Datasets is provided “as-is” and that University of Toronto and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Historical Atlas of Canada Datasets and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the Historical Atlas of Canada Datasets. University of Toronto and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s Historical Atlas of Canada Datasets.
+(iv)          The ArcCanada 4 Data Licensee acknowledges and agrees that that the Historical Atlas of Canada Datasets is provided “as-is” and that University of Toronto and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Historical Atlas of Canada Datasets and expressly disclaims any implied warranty of merchantability or fitness for a particular purpose of the Historical Atlas of Canada Datasets. University of Toronto and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of your browser to access the site\'s Historical Atlas of Canada Datasets.
 
-(v)           The ArcCanada 4 Data Licensee shall have no recourse against University of Toronto or ESRI Canada, whether by way of any suit or action, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee’s possession or use of the Historical Atlas of Canada Datasets.
+(v)           The ArcCanada 4 Data Licensee shall have no recourse against University of Toronto or Drupal Kitchen Cookoff, whether by way of any suit or action, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee’s possession or use of the Historical Atlas of Canada Datasets.
 
-(vi)          The ArcCanada 4 Data Licensee shall indemnify University of Toronto and ESRI Canada and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the Historical Atlas of Canada Datasets.
+(vi)          The ArcCanada 4 Data Licensee shall indemnify University of Toronto and Drupal Kitchen Cookoff and their respective officers, employees, agents and contractors from all claims alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee \'s possession or use of the Historical Atlas of Canada Datasets.
 
-(vii)         The ArcCanada 4 Data Licensee’s liability to indemnify University of Toronto and ESRI Canada under this data use agreement shall not affect or prejudice University of Toronto or ESRI Canada from exercising any other rights under law.
+(vii)         The ArcCanada 4 Data Licensee’s liability to indemnify University of Toronto and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice University of Toronto or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(viii)        ESRI Canada shall have the immediate right to terminate all data use rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(viii)        Drupal Kitchen Cookoff shall have the immediate right to terminate all data use rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
 SCHEDULE 6
 
  
 
-Additional Data Use Terms and Conditions for the Indian and Northern Affairs Canada Datasets (“INAC Datasets”) sourced by ESRI Canada from Indian and Northern Affairs Canada:
+Additional Data Use Terms and Conditions for the Indian and Northern Affairs Canada Datasets (“INAC Datasets”) sourced by Drupal Kitchen Cookoff from Indian and Northern Affairs Canada:
 
- (i)           The user of INAC Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the INAC Datasets and other rights pertaining in any way to INAC Datasets as used or otherwise made available under ESRI Canada’s ArcCanada 4 Online Resource Centre and has licensed to ESRI Canada certain rights to the INAC Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
+ (i)           The user of INAC Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the INAC Datasets and other rights pertaining in any way to INAC Datasets as used or otherwise made available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre and has licensed to Drupal Kitchen Cookoff certain rights to the INAC Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)           The ArcCanada 4 Data Licensee acknowledges and agrees that the Indian and Northern Affairs Canada (“INAC”) is the applicable data source provider for the INAC Datasets :
 
-(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the INAC Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c) be used in a context that may prejudice or harm a third party; or  (d) infringe on the proprietary rights of third parties.
+(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the INAC Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c) be used in a context that may prejudice or harm a third party; or  (d) infringe on the proprietary rights of third parties.
 
-(iv)          ArcCanada 4 Data Licensee acknowledges and agrees that INAC or ESRI Canada may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the INAC Datasets being used by the ArcCanada 4 Data Licensee in order to permit INAC or ESRI Canada to inspect the INAC Datasets and to verify its conformity with the terms and conditions of its permitted use.
+(iv)          ArcCanada 4 Data Licensee acknowledges and agrees that INAC or Drupal Kitchen Cookoff may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the INAC Datasets being used by the ArcCanada 4 Data Licensee in order to permit INAC or Drupal Kitchen Cookoff to inspect the INAC Datasets and to verify its conformity with the terms and conditions of its permitted use.
 
 (v)           All copyright, other proprietary notices of Canada and metadata appearing on or incorporated into the INAC Datasets, as well as any and all conditions of use associated with the INAC Datasets, shall be incorporated and maintained on all reproductions thereof.
 
-(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, INAC and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the INAC Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the INAC Datasets.  Canada, INAC and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the INAC Datasets.
+(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, INAC and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the INAC Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the INAC Datasets.  Canada, INAC and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the INAC Datasets.
 
-(vii)         ArcCanada 4 Data Licensee shall have no recourse against Canada, INAC or ESRI Canada, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the INAC Datasets.
+(vii)         ArcCanada 4 Data Licensee shall have no recourse against Canada, INAC or Drupal Kitchen Cookoff, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the INAC Datasets.
 
-(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that any use of the INAC Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or INAC of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that any use of the INAC Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or INAC of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(ix)          ArcCanada 4 Data Licensee acknowledges and agrees that any of ESRI Canada’s interpretations and/or commentary to the INAC Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre is the sole responsibility and choice of ESRI Canada and shall not be construed as an endorsement by Canada or INAC of such ESRI Canada interpretations and/or commentary to the INAC Datasets.
+(ix)          ArcCanada 4 Data Licensee acknowledges and agrees that any of Drupal Kitchen Cookoff’s interpretations and/or commentary to the INAC Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre is the sole responsibility and choice of Drupal Kitchen Cookoff and shall not be construed as an endorsement by Canada or INAC of such Drupal Kitchen Cookoff interpretations and/or commentary to the INAC Datasets.
 
-(x)           The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, INAC and ESRI Canada, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the INAC Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement.
+(x)           The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, INAC and Drupal Kitchen Cookoff, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the INAC Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement.
 
-(xi)          The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Election Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada, INAC or ESRI Canada from exercising any other rights under law.
+(xi)          The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Election Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada, INAC or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xiii)        ESRI Canada shall have the immediate right to terminate all data user rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xiii)        Drupal Kitchen Cookoff shall have the immediate right to terminate all data user rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
 
 
@@ -388,9 +388,9 @@ SCHEDULE 7
 
  
 
-Additional Data Use Terms and Conditions for Parks Canada Datasets sourced by ESRI Canada from Parks Canada:
+Additional Data Use Terms and Conditions for Parks Canada Datasets sourced by Drupal Kitchen Cookoff from Parks Canada:
 
-(i)            The user of Parks Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the Parks Canada Datasets and other rights pertaining in any way to Parks Canada Datasets as used or otherwise made available under ESRI Canada’s ArcCanada 4 Online Resource Centre and has licensed to ESRI Canada certain rights to the Parks Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)            The user of Parks Canada Datasets (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) holds and shall retain the sole and exclusive worldwide copyright to the Parks Canada Datasets and other rights pertaining in any way to Parks Canada Datasets as used or otherwise made available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre and has licensed to Drupal Kitchen Cookoff certain rights to the Parks Canada Datasets, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)           The ArcCanada 4 Data Licensee acknowledges and agrees that:
 
@@ -404,25 +404,25 @@ Name of Dataset/<Name of National Park, or National Historic Site, or National M
 
 “These climate change projections are for illustrative purposes only and do not reflect the most recent global climate model results”.
 
-(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Parks Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre must not must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c)      be used in a context that may prejudice or harm a third party; or (d) infringe on the proprietary rights of third parties.
+(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Parks Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre must not must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c)      be used in a context that may prejudice or harm a third party; or (d) infringe on the proprietary rights of third parties.
 
- (iv)         ArcCanada 4 Data Licensee acknowledges and agrees that Parks Canada or ESRI Canada may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Parks Canada Datasets being used by the ArcCanada 4 Data Licensee in order to permit Parks Canada or ESRI Canada to inspect the Parks Canada Datasets and to verify its conformity with the terms and conditions of its permitted use.
+ (iv)         ArcCanada 4 Data Licensee acknowledges and agrees that Parks Canada or Drupal Kitchen Cookoff may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Parks Canada Datasets being used by the ArcCanada 4 Data Licensee in order to permit Parks Canada or Drupal Kitchen Cookoff to inspect the Parks Canada Datasets and to verify its conformity with the terms and conditions of its permitted use.
 
 (v)           All copyright, other proprietary notices of Canada and metadata appearing on or incorporated into the Parks Canada Datasets, as well as any and all conditions of use associated with the Parks Canada Datasets, shall be incorporated and maintained on all reproductions thereof.
 
-(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Parks Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Parks Canada Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Parks Canada Datasets.  Canada, Parks Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the Parks Canada Datasets.
+(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Parks Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Parks Canada Datasets and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Parks Canada Datasets.  Canada, Parks Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of any web Site browser to access the Parks Canada Datasets.
 
-(vii)         ArcCanada 4 Data Licensee shall have no recourse against Canada, Parks Canada or ESRI Canada, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Parks Canada Datasets.
+(vii)         ArcCanada 4 Data Licensee shall have no recourse against Canada, Parks Canada or Drupal Kitchen Cookoff, whether by way of any suit or action or other, for any loss, liability, damage or cost that ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of ArcCanada 4 Data Licensee\'s possession or use of the Parks Canada Datasets.
 
-(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Parks Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Parks Canada of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Parks Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Parks Canada of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
-(ix)          ArcCanada 4 Data Licensee acknowledges and agrees that any of ESRI Canada’s interpretations and/or commentary to the Parks Canada Datasets available under ESRI Canada’s ArcCanada 4 Online Resource Centre is the sole responsibility and choice of ESRI Canada and shall not be construed as an endorsement by Canada or Parks Canada of such ESRI Canada interpretations and/or commentary to the Parks Canada Datasets.
+(ix)          ArcCanada 4 Data Licensee acknowledges and agrees that any of Drupal Kitchen Cookoff’s interpretations and/or commentary to the Parks Canada Datasets available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre is the sole responsibility and choice of Drupal Kitchen Cookoff and shall not be construed as an endorsement by Canada or Parks Canada of such Drupal Kitchen Cookoff interpretations and/or commentary to the Parks Canada Datasets.
 
-(x)           The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, Parks Canada and ESRI Canada, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the Parks Canada Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement.
+(x)           The ArcCanada 4 Data Licensee shall be responsible for, and shall at all times indemnify and hold harmless Canada, Parks Canada and Drupal Kitchen Cookoff, their respective officers, employees, agents and contractors from and against any and all claims, demands, losses, costs, damages, injuries, causes of action, actions, suits or other proceedings whatsoever by reason of or arising out of the ArcCanada 4 Data Licensee\'s use of the Parks Canada Datasets or the ArcCanada 4 Data Licensee\'s exploitation of the rights granted under this data use agreement.
 
-(xi)          The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Parks Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada, Parks Canada or ESRI Canada from exercising any other rights under law.
+(xi)          The ArcCanada 4 Data Licensee’s liability to indemnify Canada, Parks Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada, Parks Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xiii)        ESRI Canada shall have the immediate right to terminate all data user rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xiii)        Drupal Kitchen Cookoff shall have the immediate right to terminate all data user rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
  
 
@@ -430,11 +430,11 @@ SCHEDULE 8
 
  
 
-Additional Data Use Terms and Conditions for Statistics Canada’s 2009 Road Network Files Database (“2009 RNF Database”) sourced by ESRI Canada from Statistics Canada:
+Additional Data Use Terms and Conditions for Statistics Canada’s 2009 Road Network Files Database (“2009 RNF Database”) sourced by Drupal Kitchen Cookoff from Statistics Canada:
 
  
 
-(i)      The user of the 2009 RNF Database (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) as represented by the Minister of Industry (Statistics Canada) holds and shall retain the sole and exclusive worldwide copyright to the 2009 RNF Database and other rights pertaining in any way to 2009 RNF Database as used or otherwise made available under ESRI Canada’s ArcCanada 4 Online Resource Centre and has licensed to ESRI Canada certain rights to the 2009 RNF Database, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)      The user of the 2009 RNF Database (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) as represented by the Minister of Industry (Statistics Canada) holds and shall retain the sole and exclusive worldwide copyright to the 2009 RNF Database and other rights pertaining in any way to 2009 RNF Database as used or otherwise made available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre and has licensed to Drupal Kitchen Cookoff certain rights to the 2009 RNF Database, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)    The ArcCanada 4 Data Licensee acknowledges and agrees that the following is the applicable  data source notices for the 2009 RNF Database :
 
@@ -452,25 +452,25 @@ The incorporation of data sourced from Statistics Canada within this product sha
 
  
 
-(iii)   ArcCanada 4 Data Licensee acknowledges and agrees that any use of the 2009 RNF Database available under ESRI Canada’s ArcCanada 4 Online Resource Centre must not: must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c) be used in a context that may prejudice or harm a third party; or (d) infringe on the proprietary rights of third parties.
+(iii)   ArcCanada 4 Data Licensee acknowledges and agrees that any use of the 2009 RNF Database available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre must not: must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate; (c) be used in a context that may prejudice or harm a third party; or (d) infringe on the proprietary rights of third parties.
 
-(iv)   ArcCanada 4 Data Licensee acknowledges and agrees that ESRI Canada may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the 2009 RNF Database being used by the ArcCanada 4 Data Licensee in order to permit ESRI Canada to inspect the 2009 RNF Database and to verify its conformity with the terms and conditions of its permitted use.
+(iv)   ArcCanada 4 Data Licensee acknowledges and agrees that Drupal Kitchen Cookoff may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the 2009 RNF Database being used by the ArcCanada 4 Data Licensee in order to permit Drupal Kitchen Cookoff to inspect the 2009 RNF Database and to verify its conformity with the terms and conditions of its permitted use.
 
 (v)    All copyright, other proprietary notices of Canada and metadata appearing on or incorporated into the 2009 RNF Database, as well as any and all conditions of use associated with the 2009 RNF Database, shall be incorporated and maintained on all reproductions thereof.
 
-(vi)   ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Statistics Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the 2009 RNF Database, at any time and from time to time, and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the 2009 RNF Database. Canada, Statistics Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of computer software to access the 2009 RNF Database.
+(vi)   ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Statistics Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the 2009 RNF Database, at any time and from time to time, and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the 2009 RNF Database. Canada, Statistics Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of computer software to access the 2009 RNF Database.
 
-(vii)  The ArcCanada 4 Data Licensee acknowledges having received notice of the disclaimer set out above and accepts the 2009 RNF Database on an "as is" basis, without representations or warranties of any kind. No oral or written information or advice given by Canada, Statistics Canada or ESRI Canada, at any time or from time to time, shall create or evidence, or be deemed to create or evidence, a contractual representation, warranty or guarantee of any kind.
+(vii)  The ArcCanada 4 Data Licensee acknowledges having received notice of the disclaimer set out above and accepts the 2009 RNF Database on an "as is" basis, without representations or warranties of any kind. No oral or written information or advice given by Canada, Statistics Canada or Drupal Kitchen Cookoff, at any time or from time to time, shall create or evidence, or be deemed to create or evidence, a contractual representation, warranty or guarantee of any kind.
 
-(viii)ArcCanada 4 Data Licensee acknowledges and agrees that the ArcCanada 4 Data Licensee shall have no recourse against Canada, Statistics Canada and ESRI Canada, its respective officers, directors, employees, authorized agents and contractors, whether by way of any suit or action or other, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the 2009 RNF Database or arising out of the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
+(viii)ArcCanada 4 Data Licensee acknowledges and agrees that the ArcCanada 4 Data Licensee shall have no recourse against Canada, Statistics Canada and Drupal Kitchen Cookoff, its respective officers, directors, employees, authorized agents and contractors, whether by way of any suit or action or other, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the 2009 RNF Database or arising out of the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
 
-(ix)   The ArcCanada 4 Data Licensee shall indemnify Canada, Statistics Canada and ESRI Canada, their respective officers, directors, employees, authorized agents and contractors from all claims whatsoever alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee\'s possession or use of the 2009 RNF Database or the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
+(ix)   The ArcCanada 4 Data Licensee shall indemnify Canada, Statistics Canada and Drupal Kitchen Cookoff, their respective officers, directors, employees, authorized agents and contractors from all claims whatsoever alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee\'s possession or use of the 2009 RNF Database or the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
 
-(x)    The ArcCanada 4 Data Licensee\'s liability to indemnify Canada, Election Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada, Statistics Canada or ESRI Canada from exercising any other rights under law.
+(x)    The ArcCanada 4 Data Licensee\'s liability to indemnify Canada, Election Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada, Statistics Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xi)   ESRI Canada shall have the immediate right to terminate all data user rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xi)   Drupal Kitchen Cookoff shall have the immediate right to terminate all data user rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
-(i)      ArcCanada 4 Data Licensee acknowledges and agrees that any use of the 2009 RNF Database available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Statistics Canada of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(i)      ArcCanada 4 Data Licensee acknowledges and agrees that any use of the 2009 RNF Database available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Statistics Canada of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
  
 
@@ -482,11 +482,11 @@ SCHEDULE 9
 
  
 
-Additional Data Use Terms and Conditions for Statistics Canada’s Boundary Files 2006 Census Database (“Boundary Files”) sourced by ESRI Canada from Statistics Canada:
+Additional Data Use Terms and Conditions for Statistics Canada’s Boundary Files 2006 Census Database (“Boundary Files”) sourced by Drupal Kitchen Cookoff from Statistics Canada:
 
  
 
-(i)            The user of the Boundary Files (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) as represented by the Minister of Industry (Statistics Canada) holds and shall retain the sole and exclusive worldwide copyright to the Boundary Files and other rights pertaining in any way to Boundary Files as used or otherwise made available under ESRI Canada’s ArcCanada 4 Online Resource Centre and has licensed to ESRI Canada certain rights to the Boundary Files, including the right to sublicense those rights to third parties, on certain terms and conditions.
+(i)            The user of the Boundary Files (“ArcCanada 4 Data Licensee”) acknowledges and agrees that Her Majesty the Queen in Right of Canada (Canada) as represented by the Minister of Industry (Statistics Canada) holds and shall retain the sole and exclusive worldwide copyright to the Boundary Files and other rights pertaining in any way to Boundary Files as used or otherwise made available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre and has licensed to Drupal Kitchen Cookoff certain rights to the Boundary Files, including the right to sublicense those rights to third parties, on certain terms and conditions.
 
 (ii)           The ArcCanada 4 Data Licensee acknowledges and agrees that the following is the applicable data source notices for the Boundary Files:
 
@@ -502,25 +502,25 @@ The incorporation of data sourced from Statistics Canada within this product sha
 
  
 
-(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Boundary Files available under ESRI Canada’s ArcCanada 4 Online Resource Centre must not must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate;  (c)               be used in a context that may prejudice or harm a third party; or  (d) infringe on the proprietary rights of third parties.:
+(iii)          ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Boundary Files available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre must not must not: (a) be in an undignified context; (b) be considered unfair, misleading or inaccurate;  (c)               be used in a context that may prejudice or harm a third party; or  (d) infringe on the proprietary rights of third parties.:
 
-(iv)          ArcCanada 4 Data Licensee acknowledges and agrees that ESRI Canada may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Boundary Files being used by the ArcCanada 4 Data Licensee in order to permit ESRI Canada to inspect the Boundary Files and to verify its conformity with the terms and conditions of its permitted use.
+(iv)          ArcCanada 4 Data Licensee acknowledges and agrees that Drupal Kitchen Cookoff may at any reasonable time, upon notice to the ArcCanada 4 Data Licensee, have access to the Boundary Files being used by the ArcCanada 4 Data Licensee in order to permit Drupal Kitchen Cookoff to inspect the Boundary Files and to verify its conformity with the terms and conditions of its permitted use.
 
 (v)           All copyright, other proprietary notices of Canada and metadata appearing on or incorporated into the Boundary Files, as well as any and all conditions of use associated with the Boundary Files, shall be incorporated and maintained on all reproductions thereof.
 
-(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Statistics Canada and ESRI Canada make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Boundary Files, at any time and from time to time, and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Boundary Files. Canada, Statistics Canada and ESRI Canada do not ensure or warrant compatibility with past, current or future versions of computer software to access the Boundary Files.
+(vi)          ArcCanada 4 Data Licensee acknowledges and agrees that Canada, Statistics Canada and Drupal Kitchen Cookoff make no representation or warranty of any kind with respect to the accuracy, usefulness, novelty, validity, scope, completeness or currency of the Boundary Files, at any time and from time to time, and expressly disclaim any implied warranty of merchantability or fitness for a particular purpose of the Boundary Files. Canada, Statistics Canada and Drupal Kitchen Cookoff do not ensure or warrant compatibility with past, current or future versions of computer software to access the Boundary Files.
 
-(vii)         The ArcCanada 4 Data Licensee acknowledges having received notice of the disclaimer set out above and accepts the Boundary Files on an "as is" basis, without representations or warranties of any kind. No oral or written information or advice given by Canada, Statistics Canada or ESRI Canada, at any time or from time to time, shall create or evidence, or be deemed to create or evidence, a contractual representation, warranty or guarantee of any kind.
+(vii)         The ArcCanada 4 Data Licensee acknowledges having received notice of the disclaimer set out above and accepts the Boundary Files on an "as is" basis, without representations or warranties of any kind. No oral or written information or advice given by Canada, Statistics Canada or Drupal Kitchen Cookoff, at any time or from time to time, shall create or evidence, or be deemed to create or evidence, a contractual representation, warranty or guarantee of any kind.
 
-(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that the ArcCanada 4 Data Licensee shall have no recourse against Canada, Statistics Canada and ESRI Canada, its respective officers, directors, employees, authorized agents and contractors, whether by way of any suit or action or other, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the Boundary Files or arising out of the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
+(viii)        ArcCanada 4 Data Licensee acknowledges and agrees that the ArcCanada 4 Data Licensee shall have no recourse against Canada, Statistics Canada and Drupal Kitchen Cookoff, its respective officers, directors, employees, authorized agents and contractors, whether by way of any suit or action or other, for any loss, liability, damage or cost that the ArcCanada 4 Data Licensee may suffer or incur at any time, by reason of the ArcCanada 4 Data Licensee\'s possession or use of the Boundary Files or arising out of the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
 
-(ix)          The ArcCanada 4 Data Licensee shall indemnify Canada, Statistics Canada and ESRI Canada, its respective officers, directors, employees, authorized agents and contractors from all claims whatsoever alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee\'s possession or use of the Boundary Files or the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
+(ix)          The ArcCanada 4 Data Licensee shall indemnify Canada, Statistics Canada and Drupal Kitchen Cookoff, its respective officers, directors, employees, authorized agents and contractors from all claims whatsoever alleging loss, costs, expenses, damages or injuries (including injuries resulting in death) arising out of the ArcCanada 4 Data Licensee\'s possession or use of the Boundary Files or the exercise by the ArcCanada 4 Data Licensee of its rights hereunder.
 
-(x)           The ArcCanada 4 Data Licensee\'s liability to indemnify Canada, Election Canada and ESRI Canada under this data use agreement shall not affect or prejudice Canada, Statistics Canada or ESRI Canada from exercising any other rights under law.
+(x)           The ArcCanada 4 Data Licensee\'s liability to indemnify Canada, Election Canada and Drupal Kitchen Cookoff under this data use agreement shall not affect or prejudice Canada, Statistics Canada or Drupal Kitchen Cookoff from exercising any other rights under law.
 
-(xi)          ESRI Canada shall have the immediate right to terminate all data user rights granted by ESRI Canada if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
+(xi)          Drupal Kitchen Cookoff shall have the immediate right to terminate all data user rights granted by Drupal Kitchen Cookoff if the ArcCanada 4 Data Licensee permits or commits a breach of any of its covenants or obligations under this Schedule or the data use agreement. All disclaimers, warranties and indemnities shall survive any such termination.
 
-(i)            ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Boundary Files available under ESRI Canada’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Statistics Canada of ESRI Canada’s ArcCanada 4 Online Resource Centre.
+(i)            ArcCanada 4 Data Licensee acknowledges and agrees that any use of the Boundary Files available under Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre shall not be construed as an endorsement by Canada or Statistics Canada of Drupal Kitchen Cookoff’s ArcCanada 4 Online Resource Centre.
 
  
 

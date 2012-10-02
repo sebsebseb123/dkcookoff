@@ -46,7 +46,7 @@ run the following command:
     git submodule update --init --recursive
     export PATH=${PATH}:/fullpath/to/profile/tmp/scripts/rerun
     export RERUN_MODULES=/fullpath/to/profile/tmp/scripts/rerun-modules
-    rerun 2ndlevel:build --project esricanada --build-file build-esricanada.make --destination path/destination/to/docroot
+    rerun 2ndlevel:build --project dkcookoff --build-file build-dkcookoff.make --destination path/destination/to/docroot
 
 This will build the site and the repository will be located in
 `path/to/destination/docroot/profiles/PROJECTNAME/`
@@ -63,8 +63,8 @@ scratch space directory with the appropriate directory structure.
     export PATH=${PATH}:/fullpath/to/profile/tmp/scripts/rerun
     export RERUN_MODULES=/fullpath/to/profile/tmp/scripts/rerun-modules
     WORKSPACE=path/to/scratchspace rerun 2ndlevel:deploy \
-      --project esricanada \
-      --repo esricanada@svn-1745.prod.hosting.acquia.com:esricanada.git \
+      --project dkcookoff \
+      --repo dkcookoff@svn-1745.prod.hosting.acquia.com:dkcookoff.git \
       --acapi-user d9b69484-7cf1-11e1-9eb5-12313928d5b8 \
       --apapi-pass Pau6uy8d9J3YBqxk3h7cWUqZYehOwRan1r/MafvsXGBU9FKNB1LUGcf9Tub0PHf3TGUPH74W1NYw
 
@@ -97,5 +97,5 @@ the web UI. [[Reference][github-git-setup]]
 Drupal Profile Install
 ----------------------
 
-drush -y site-install esricanada --db-url=mysql://root:testing@localhost/esri --site-name=ESRI Canada --account-name=admin --account-pass=[password]
+drush -y site-install dkcookoff --db-url=mysql://root:testing@localhost/esri --site-name=Drupal Kitchen Cookoff --account-name=admin --account-pass=[password]
 

@@ -1,0 +1,90 @@
+name = ESRI Canada
+description = Theme for the ESRI Canada
+screenshot = images/screenshot.gif
+core = "7.x"
+project = "ESRI"
+engine = phptemplate
+
+; Regions
+regions[header] = Header
+regions[sharethis] = Share this
+regions[navigation] = Navigation
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer_feature] = Footer Feature
+regions[footer_top] = Footer Top
+regions[footer_bottom] = Footer Bottom
+regions[page_message] = Page Message
+regions[focal] = Focal Slides
+
+; Regions (Others)
+regions[highlight] = Highlight
+regions[help] = Help
+
+; Regions (Responsive)
+regions[rsp_search] = Responsive Search
+regions[rsp_navigation] = Responsive Navigation
+regions[rsp_language] = Responsive Language
+
+; Panels Module layouts
+plugins[panels][layouts] = custom_layouts
+
+; Stylesheets
+stylesheets[all][] = css/default.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/global.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = css/accessibility.css
+stylesheets[all][] = js/jquery-mobile/jquery.mobile.custom.css
+stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/navigation.css
+stylesheets[all][] = css/resources.css
+stylesheets[all][] = css/panels.css
+stylesheets[all][] = css/homepage.css
+
+; Stylesheets (Responsive 1040)
+stylesheets[screen and (max-width: 1040px)][] = css/responsive/homepage-1040.css
+
+; Stylesheets (Responsive 960)
+stylesheets[screen and (max-width: 960px)][] = css/responsive/global-960.css
+
+; Stylesheets (Responsive 800)
+stylesheets[screen and (max-width: 800px)][] = css/responsive/global-800.css
+stylesheets[screen and (max-width: 800px)][] = css/responsive/navigation-800.css
+stylesheets[screen and (max-width: 800px)][] = css/responsive/resources-800.css
+stylesheets[screen and (max-width: 800px)][] = css/responsive/forms-800.css
+
+; Stylesheets (Responsive 650)
+stylesheets[screen and (max-width: 650px)][] = css/responsive/navigation-650.css
+stylesheets[screen and (max-width: 650px)][] = css/responsive/homepage-650.css
+
+; Stylesheets (Responsive 550)
+stylesheets[screen and (max-width: 550px)][] = css/responsive/layout-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/global-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/navigation-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/forms-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/resources-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/panels-550.css
+stylesheets[screen and (max-width: 550px)][] = css/responsive/homepage-550.css
+
+; Javascripts
+scripts[] = js/global.js
+scripts[] = js/jquery-mobile/jquery.mobile.settings.js
+scripts[] = js/jquery-mobile/jquery.mobile.custom.js
+scripts[] = js/forms.js
+scripts[] = js/resources.js
+scripts[] = js/accordion.js
+scripts[] = js/ordered-lists.js
+scripts[] = js/navigation.js
+scripts[] = js/jquery.crankslider.js
+scripts[] = js/homepage.js
+scripts[] = js/panels.js
+
+; Javsacripts (Responsive)
+scripts[] = js/responsive/global-550.js
+
+settings[esri_tabs] = 1
+settings[esri_breadcrumb_separator] = »
+settings[wireframe_mode] = 0
+settings[clear_registry] = 0

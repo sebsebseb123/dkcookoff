@@ -10,7 +10,7 @@
 # Bail if non-zero exit code
 set -e
 
-PROJECT=esricanada
+PROJECT=dkcookoff
 
 # Get absolute paths from relative
 realpath() {
