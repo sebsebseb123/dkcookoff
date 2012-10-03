@@ -13,13 +13,15 @@ set -e
 PROJECT=dkcookoff
 
 # Get absolute paths from relative
-realpath() {
-  [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
-}
+#realpath() {
+#  [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+#}
 
 # Set from args
-BUILD_FILE=`realpath "$1"`
-BUILD_DEST=`realpath "$2"`
+BUILD_FILE=$1
+BUILD_DEST=$2
+#BUILD_FILE=`realpath "$1"`
+#BUILD_DEST=`realpath "$2"`
 
 # Assume vagrant VM defaults if neither ENV variables nor args set
 if [ -z "$BUILD_FILE" ]; then
@@ -37,7 +39,7 @@ drush make ${BUILD_FILE} ${BUILD_DEST} \
   --no-gitinfofile \
   --yes
 
-chmod u+w ${BUILD_DEST}/sites/default/settings.php
+chmod u+w ${BUILD_DEST}\sites\default\settings.php
 
 echo "Appending settings.php snippets..."
 for f in ${BUILD_DEST}/profiles/${PROJECT}/tmp/snippets/*.settings.php

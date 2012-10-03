@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Code for Drupal Kitchen Cookoff
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function dkc_single_menu() {
+  $items = array();
+
+  // Start page
+  $items['start/single'] = array(
+    'title' => t('Start'),
+    'page callback' => 'dkc_single_start',
+    'access arguments' => array('play single player'),
+    'file' => 'includes/pages.inc',
+  );
+
+  return $items;
+}
