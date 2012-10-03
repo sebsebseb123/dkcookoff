@@ -1,7 +1,7 @@
-Esri Canada Install Profile
+Drupal Kitchen Cookoff Install Profile
 ===========================
 
-This is the D7 install profile for the Esri Canada project.
+This is the D7 install profile for the Drupal Kitchen Cookoff project.
 
 Layout
 ------
@@ -24,7 +24,7 @@ Here's the additional suggested folder structure for the install profile:
     +-themes/
     | +-contrib/  (gitignored - any contrib themes should go here via makefile)
     | +-custom/   (custom theme for the site)
-    +-libraries/  (gitignored - generated via makefile)  
+    +-libraries/  (gitignored - generated via makefile)
     +-tmp/        (for things that don't fit in standard install profile structure)
     | +-docs/     (project-specific docs)
     | +-scripts/  (any scripts related to project)
@@ -93,9 +93,8 @@ the web UI. [[Reference][github-git-setup]]
 
 <!-- Links -->
    [github-git-setup]: https://help.github.com/articles/set-up-git
-   
+
 Drupal Profile Install
 ----------------------
 
-drush -y site-install dkcookoff --db-url=mysql://root:testing@localhost/esri --site-name=Drupal Kitchen Cookoff --account-name=admin --account-pass=[password]
-
+drush -y site-install dkcookoff --db-url=mysql://root:testing@localhost/dkcookoff --site-name=Drupal Kitchen Cookoff --account-name=admin --account-pass=[password]

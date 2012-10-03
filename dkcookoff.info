@@ -1,6 +1,4 @@
-name = Esri Canada
-description = Esri Canada project install profile.
+name = Drupal Kitchen Cookoff
+description = Drupal Kitchen Cookoff project install profile.
 version = VERSION
 core = 7.x
-dependencies[] = block
-dependencies[] = dblog

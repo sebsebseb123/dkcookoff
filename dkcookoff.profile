@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Enables modules and site configuration for a Esri Canada site installation.
+ * Enables modules and site configuration for a Drupal Kitchen Cookoff site installation.
  */
 
 /**
