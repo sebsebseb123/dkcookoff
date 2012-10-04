@@ -28,5 +28,17 @@ function dkc_single_menu() {
  * Implements hook_form_alter().
  */
 function dkc_single_form_alter(&$form, &$form_state, $form_id) {
-  $val = 1;
+  // Check for a level.
+  if (!empty($_GET['level'])) {
+    // Load the level.
+    $level = dkc_single_get_level_plugin($_GET['level']);
+
+    // Store the level data in form_state.
+    $form_state['dkc_level'] = $level;
+
+    // Let the level run it's own form alter.
+    if ($function = ctools_plugin_get_function($level, 'form_alter')) {
+      $function($form, $form_state, $form_id);
+    }
+  }
 }

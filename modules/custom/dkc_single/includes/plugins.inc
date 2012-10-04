@@ -93,3 +93,37 @@ function dkc_single_get_level_plugins() {
   ctools_include('plugins');
   return ctools_get_plugins('dkc_single', 'level');
 }
+
+/**
+ * Generic validate callback for level plugins, which in turn calls
+ * the proper validate callback.
+ */
+function dkc_single_level_validate_callback($form, &$form_state) {
+  // Check for a level.
+  if (!empty($form_state['dkc_level'])) {
+    // Load the level.
+    $level = $form_state['dkc_level'];
+
+    // Let the level run it's own form alter.
+    if ($function = ctools_plugin_get_function($level, 'form_validate')) {
+      $function($form, $form_state);
+    }
+  }
+}
+
+/**
+ * Generic submit callback for level plugins, which in turn calls
+ * the proper submitcallback.
+ */
+function dkc_single_level_submit_callback($form, &$form_state) {
+  // Check for a level.
+  if (!empty($form_state['dkc_level'])) {
+    // Load the level.
+    $level = $form_state['dkc_level'];
+
+    // Let the level run it's own form alter.
+    if ($function = ctools_plugin_get_function($level, 'form_submit')) {
+      $function($form, $form_state);
+    }
+  }
+}
