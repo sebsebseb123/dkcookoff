@@ -11,6 +11,9 @@
  */
 $plugin = array(
   'type' => 'level',
-  'title' => t('Change basic site settings.'),
+  'title' => t('Change basic site settings'),
   'description' => t('Change some of the basic site settings.'),
+  'level' => 1,
+  'sublevel' => 1,
+  'start_path' => 'admin/config/system/site-information',
 );

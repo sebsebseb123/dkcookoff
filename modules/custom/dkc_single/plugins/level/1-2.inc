@@ -11,6 +11,9 @@
  */
 $plugin = array(
   'type' => 'level',
-  'title' => t('Change other settings.'),
+  'title' => t('Change other settings'),
   'description' => t('Change some of the other settings.'),
+  'level' => 1,
+  'sublevel' => 2,
+  'start_path' => 'admin/appearance',
 );
