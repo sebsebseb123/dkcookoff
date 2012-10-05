@@ -121,6 +121,22 @@ function dkc_single_level_submit_callback($form, &$form_state) {
     // Load the level.
     $level = $form_state['dkc_level'];
 
+    // If we're submitting, the player has passed the level. So,
+    // let's make note of it.
+    global $user;
+    // This is not a real solution for keeping user score info. This is here
+    // as a basic, proof of concept.
+    $user_scorecard = variable_get('dkc_user_scorecard-' . $user->uid, array());
+    // Here's where we save the player's progress. I like the "keyed by time"
+    // array. So, if the player attempts a level a second time, we would keep
+    // track of that too. It might also be nice to keep some metrics... like,
+    // if the player made an error (aka, form_set_error), then we could
+    // keep track of that and keep that info here. So, on harder levels where
+    // a player may require mulitple attempts to pass, they can see that each
+    // time was a little better. Maybe even keep time taken as a metric?
+    $user_scorecard['passed'][time()] = $level;
+    variable_set('dkc_user_scorecard-' . $user->uid, $user_scorecard);
+
     // Let the level run it's own form alter.
     if ($function = ctools_plugin_get_function($level, 'form_submit')) {
       $function($form, $form_state);

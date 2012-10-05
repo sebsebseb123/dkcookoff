@@ -35,6 +35,8 @@ function dkc_level_1_1_form_alter(&$form, &$form_state, $form_id) {
     $form['level_info']['step_1'] = array(
       '#type' => 'item',
       '#title' => t('Step @num', array('@num' => 1)),
+      // Since later we check that site_name == "Cookoff" ...
+      // We should have that be a variable, since the word could change.
       '#description' => t('Change the "Site name" to be "Cookoff" minus the quotes.'),
     );
     $form['level_info']['step_2'] = array(
@@ -47,14 +49,23 @@ function dkc_level_1_1_form_alter(&$form, &$form_state, $form_id) {
     // validate and submit handlers for this plugin.
     $form['#validate'][] = 'dkc_single_level_validate_callback';
     $form['#submit'][] = 'dkc_single_level_submit_callback';
+    // Set the redirect back to the levels page.
+    $form_state['redirect'] = 'start/single'; // TODO: This doesn't redirect... it's not properly saving.
   }
 }
 
 function dkc_level_1_1_form_validate($form, &$form_state) {
-  $val;
-  form_set_error(NULL, 'No!');
+  // Check to see if they've changed the name and slogan.
+  if ($form_state['values']['site_name'] != 'Cookoff') {
+    form_set_error('site_name', t('Sorry, you didn\'t properly set the Site name to "Cookoff".'));
+  }
+  if ($form_state['values']['site_slogan'] != 'Kids can rock and roll!') {
+    form_set_error('site_slogan', t('Sorry, you didn\'t properly set the Slogan to "Kids can rock and roll!".'));
+  }
 }
 
 function dkc_level_1_1_form_submit($form, &$form_state) {
-  $val;
+  drupal_set_message(t("Congratulations! You passed level 1!"));
+  // TODO: We shouldn't hard code the redirection
+  drupal_goto('start/single');
 }

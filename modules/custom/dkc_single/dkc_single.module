@@ -20,8 +20,30 @@ function dkc_single_menu() {
     'access arguments' => array('play single player'),
     'file' => 'includes/pages.inc',
   );
+  // Start page
+  $items['start/single/%dkc_level'] = array(
+    'title' => t('Single Player Level'),
+    'page callback' => 'dkc_single_page',
+    'page arguments' => array(2),
+    'access arguments' => array('play single player'),
+    'file' => 'includes/pages.inc',
+  );
+
+  // Score care
+  $items['user/%user/score'] = array(
+    'title' => t('Score'),
+    'page callback' => 'dkc_single_score',
+    'page arguments' => array(1),
+    'access arguments' => array('play single player'),
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'includes/pages.inc',
+  );
 
   return $items;
+}
+
+function dkc_level_load($level_id) {
+  return dkc_single_get_level_plugin($level_id);
 }
 
 /**
@@ -32,7 +54,6 @@ function dkc_single_form_alter(&$form, &$form_state, $form_id) {
   if (!empty($_GET['level'])) {
     // Load the level.
     $level = dkc_single_get_level_plugin($_GET['level']);
-
     // Store the level data in form_state.
     $form_state['dkc_level'] = $level;
 
