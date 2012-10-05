@@ -120,8 +120,67 @@ $var = 1;
     '#description' => t('A few notes before you dive in.
       <br />
       <br />
-
+      You\'ll be brought to different admin sections on the site, and you\'ll
+      be exposed to the scary drupal backend. We\'ll try to make it clear
+      exactly what you need to do on each page. See the example form below to
+      get an idea of this.
       '),
+  );
+  $output['example_form'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Form Group'),
+    '#description' => t('A lot of forms are broken up into groups. If there\'s
+      a field group you need to pay attention to, it will be clearly marked with a star.
+      '),
+  ) + dkc_highlight_fieldset();
+    $output['example_form']['text_field'] = array(
+      '#type' => 'textfield',
+      '#title' => t('This is a field you need to pay attention to... notice
+      the red arrow pointing to it.'),
+    ) + dkc_p_arrow();
+    $output['example_form']['dis_text_field'] = array(
+      '#type' => 'textfield',
+      '#title' => t('This is a field you don\'t need to pay attention to.
+      Notice no arrow, and how it\'s slightly grey-er... as if it\'s been
+      forgotten... that\'s because it has.'),
+    ) + dkc_unused();
+  $output['example_unused_form'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Unused Form Fields'),
+    '#description' => t('A lot of forms are broken up into groups. If there\'s
+      a field you need to pay attention to, it will be clearly marked with an arrow.
+      '),
+  ) + dkc_unused();
+    $output['example_unused_form']['oth_text_field'] = array(
+      '#type' => 'textfield',
+      '#title' => t('This is a text field.'),
+    );
+  $output['example_req'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Required Form Fields'),
+    '#description' => t('A lot of forms are broken up into groups. If there\'s
+      a field you need to pay attention to, it will be clearly marked with an arrow.
+      '),
+  );
+    $output['example_req']['req'] = array(
+      '#type' => 'textfield',
+      '#title' => t('This is a required text field.'),
+      '#description' => t('Notice the red astrisk... this simply means that
+        the field cannot be empty. It\'s a drupal thing.'),
+      '#required' => TRUE,
+    );
+    $output['example_req']['req_dis'] = array(
+      '#type' => 'textfield',
+      '#title' => t('This is an unused required text field.'),
+      '#description' => t('The dot is there because drupal added it. It
+        has nothing to do with the game. Since the field is still greyed out,
+        you still don\'t need to worry about it.'),
+      '#required' => TRUE,
+    ) + dkc_unused();
+  $output['done'] = array(
+    '#type' => 'item',
+    '#title' => t('Ready to try the first level?'),
+    '#description' => l(t('Click here to go back.'), 'start/single'),
   );
 
   return $output;

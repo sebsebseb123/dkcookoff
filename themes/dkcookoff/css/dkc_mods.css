@@ -1,0 +1,31 @@
+.animated-arrow {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+.dkc-unused, .dkc-unused * {
+  background: #EEE;
+  color: #888;
+  border-color: #CCC;
+}
+    .dkc-unused fieldset legend {
+      background: #DBDBDB;
+    }
+    .dkc-unused .fieldset-legend {
+      background: #DBDBDB;
+      color: #555;
+    }
+    .dkc-unused .fieldset-description {
+      color: #888;
+    }
+
+.dkc-highlight-fieldset .fieldset-legend:before {
+  content: url(../images/star.png);
+  margin-right: 5px;
+}
+.dkc-highlight-fieldset .fieldset-description {
+  background: #d0e1f2;
+  padding: 10px;
+  border-radius: 10px;
+}

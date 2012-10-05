@@ -15,7 +15,15 @@ function dkc_single_start() {
   // Build links to levels.
   $links = array();
   foreach ($levels as $level) {
-    $links[] = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
+    $level_num = $level['level'];
+
+    // Build level label.
+    if (empty($links[$level_num])) {
+      $links[$level_num]['data'] = t('Level @num', array('@num' => $level_num));
+    }
+
+    // Build level link.
+    $links[$level_num]['children'][] = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
   }
 
   // Start output array.

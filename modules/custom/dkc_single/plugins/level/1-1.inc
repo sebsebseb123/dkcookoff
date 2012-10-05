@@ -31,7 +31,7 @@ function dkc_level_1_1_form_alter(&$form, &$form_state, $form_id) {
       '#weight' => -999,
       '#title' => t('Level Info'),
       '#description' => t('Follow these steps to make your first basic changes to a drupal site.'),
-    );
+    ) + dkc_highlight_fieldset();
     $form['level_info']['step_1'] = array(
       '#type' => 'item',
       '#title' => t('Step @num', array('@num' => 1)),
@@ -44,6 +44,16 @@ function dkc_level_1_1_form_alter(&$form, &$form_state, $form_id) {
       '#title' => t('Step @num', array('@num' => 2)),
       '#description' => t('Change the "Slogan" to be "Kids can rock and roll!" minus the quotes.'),
     );
+
+    // Highlight field.
+    $form['site_information'] += dkc_highlight_fieldset();
+    $form['site_information']['site_name'] += dkc_p_arrow();
+    $form['site_information']['site_slogan'] += dkc_p_arrow();
+
+    // Unuse fields.
+    $form['site_information']['site_mail'] += dkc_unused();
+    $form['front_page'] += dkc_unused();
+    $form['error_page'] += dkc_unused();
 
     // Add generic validate and submit handlers, which will trigger the actual
     // validate and submit handlers for this plugin.

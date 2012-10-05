@@ -4,8 +4,12 @@
  * Code for Drupal Kitchen Cookoff
  */
 
- // Load the plugins include, which has a bunch of plugin functions we'll need.
+// Load the plugins include, which has a bunch of plugin functions we'll need.
 module_load_include('inc', 'dkc_single', 'includes/plugins');
+
+// Load the random include, which has some random generation functions that
+// plugins will need.
+module_load_include('inc', 'dkc_single', 'includes/random');
 
 /**
  * Implements hook_menu().
@@ -42,6 +46,9 @@ function dkc_single_menu() {
   return $items;
 }
 
+/**
+ * Level loading function.
+ */
 function dkc_level_load($level_id) {
   return dkc_single_get_level_plugin($level_id);
 }
@@ -62,4 +69,43 @@ function dkc_single_form_alter(&$form, &$form_state, $form_id) {
       $function($form, $form_state, $form_id);
     }
   }
+}
+
+/**
+ * Shorthand function to display an animated arrow for form fields.
+ */
+function dkc_p_arrow() {
+  $variables = array(
+    'path' => drupal_get_path('module', 'dkc_single') . '/images/prefix_arrow.gif',
+    'attributes' => array(
+      'class' => array(
+        'animated-arrow',
+        'prefix-arrow',
+      ),
+    ),
+  );
+
+  return array(
+    '#field_prefix' => theme('image', $variables),
+  );
+}
+
+/**
+ * Shorthand function to add prefix and suffix to fields.
+ */
+function dkc_unused() {
+  return array(
+    '#prefix' => '<div class="dkc-unused">',
+    '#suffix' => '</div>',
+  );
+}
+
+/**
+ * Shorthand function to add prefix and suffix to fieldsets.
+ */
+function dkc_highlight_fieldset() {
+  return array(
+    '#prefix' => '<div class="dkc-highlight-fieldset">',
+    '#suffix' => '</div>',
+  );
 }

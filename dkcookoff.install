@@ -14,10 +14,24 @@
 function dkcookoff_install() {
   // Execute all module updates
   $sandbox = array();
-  for ($i = 10000; $i < 10099; $i++){
+  for ($i = 7000; $i < 7099; $i++){
     $func = 'dkcookoff_update_'.$i;
     if (function_exists($func)){
       $func($sandbox);
     }
   }
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function dkcookoff_update_7000(&$sandbox) {
+  variable_set('site_frontpage', 'start/single');
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function dkcookoff_update_7001(&$sandbox) {
+  variable_set('theme_default', 'dkcookoff');
 }
