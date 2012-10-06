@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Code for Drupal Kitchen Cookoff
+ */
+
+// Load the plugins include, which has a bunch of plugin functions we'll need.
+//module_load_include('inc', 'dkc_single', 'includes/plugins');
+
+// Load the random include, which has some random generation functions that
+// plugins will need.
+//module_load_include('inc', 'dkc_single', 'includes/random');
+
+/**
+ * Implements hook_menu().
+ */
+function dkc_core_menu() {
+  $items = array();
+
+  // Start page
+  $items['start'] = array(
+    'title' => t('Start a single player game'),
+    'page callback' => 'dkc_single_start',
+    'access arguments' => array('play single player'),
+    'file' => 'includes/pages.inc',
+  );
+
+  return $items;
+}
