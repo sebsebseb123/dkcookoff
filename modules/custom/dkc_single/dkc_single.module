@@ -109,3 +109,14 @@ function dkc_highlight_fieldset() {
     '#suffix' => '</div>',
   );
 }
+
+/**
+ * Implements hook_permission().
+ */
+function dkc_single_permission() {
+  return array(
+    'play single player' => array(
+      'title' => t('Play a single player game of DK Cookoff'),
+    ),
+  );
+}

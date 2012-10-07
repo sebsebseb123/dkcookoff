@@ -69,6 +69,11 @@ function dkc_single_score() {
   global $user;
   $user_scorecard = variable_get('dkc_user_scorecard-' . $user->uid, array());
 
+  // Any score yet?
+  if (empty($user_scorecard)) {
+    return t('You still have yet to complete a level... get to it!');
+  }
+
   // Set header.
   $header = array(t('Completed on'), t('Level'), t('Sublevel'), t('Other metric'));
 

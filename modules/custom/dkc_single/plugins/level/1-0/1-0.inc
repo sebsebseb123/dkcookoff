@@ -23,7 +23,6 @@ $plugin = array(
  * Page callback, to handle the pages for this level.
  */
 function dkc_level_1_0_page_callback($args) {
-$var = 1;
   $page = array_shift($args);
 
   // Once you find the page, the level could handle it as it sees fit.

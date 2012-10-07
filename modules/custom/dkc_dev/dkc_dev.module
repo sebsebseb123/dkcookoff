@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Code for Drupal Kitchen Cookoff - Dev module
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function dkc_dev_menu() {
+  $items = array();
+
+  // Reset Score
+  $items['start/reset'] = array(
+    'page callback' => 'dkc_dev_reset_score',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Menu callback to reset the score of the current player.
+ */
+function dkc_dev_reset_score() {
+  global $user;
+  variable_del('dkc_user_scorecard-' . $user->uid);
+}

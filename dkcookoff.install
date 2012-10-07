@@ -24,14 +24,11 @@ function dkcookoff_install() {
 
 /**
  * Implements hook_update_N().
+ *   Basic settings
  */
 function dkcookoff_update_7000(&$sandbox) {
-  variable_set('site_frontpage', 'start/single');
-}
-
-/**
- * Implements hook_update_N().
- */
-function dkcookoff_update_7001(&$sandbox) {
+  variable_set('site_frontpage', 'start');
   variable_set('theme_default', 'dkcookoff');
+
+  return t('Basic settings');
 }

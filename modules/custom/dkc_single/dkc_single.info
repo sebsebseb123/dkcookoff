@@ -5,4 +5,5 @@ package = DK Cookoff
 php = 5.2.4
 version = 7.x-1.0
 project = dkc_single
+dependencies[] = dkc_core
 dependencies[] = ctools

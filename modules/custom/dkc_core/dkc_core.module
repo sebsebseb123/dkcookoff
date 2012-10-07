@@ -19,9 +19,9 @@ function dkc_core_menu() {
 
   // Start page
   $items['start'] = array(
-    'title' => t('Start a single player game'),
-    'page callback' => 'dkc_single_start',
-    'access arguments' => array('play single player'),
+    'title' => t('Welcome to Drupal Kitchen Cookoff.'),
+    'page callback' => 'dkc_core_start',
+    'access callback' => TRUE,
     'file' => 'includes/pages.inc',
   );
 
