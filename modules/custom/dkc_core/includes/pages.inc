@@ -22,17 +22,22 @@ function dkc_core_start() {
 
   $output['welcome'] = array(
     '#type' => 'item',
-    '#title' => t('Welcome'),
     '#description' => $welcome,
   );
 
   if ($user->uid) {
     $links = array();
+    // Add link to single player, if needed.
     if (module_exists('dkc_single') && user_access('play single player')) {
       $links[] = l(t('Single player game'), 'start/single');
     }
+    // Add link to multi player, if needed.
     if (module_exists('dkc_multi') && user_access('play multi player')) {
       $links[] = l(t('Multi player game'), 'start/multi');
+    }
+    // Add link to single player scoreboard.
+    if (module_exists('dkc_single') && user_access('play single player')) {
+      $links[] = l(t('Score board'), 'user/' . $user->uid . '/score');
     }
 
     $output['options'] = array(

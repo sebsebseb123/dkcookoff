@@ -9,8 +9,12 @@
  * Menu callback. Starting page, where you get to pick a level.
  */
 function dkc_single_start() {
+  // Get user score.
+  $user_scorecard = dkc_single_get_user_score();
   // Get level data.
   $levels = dkc_single_get_level_plugins();
+  // Sort by weight.
+  uasort($levels, 'drupal_sort_weight');
 
   // Build links to levels.
   $links = array();
@@ -22,8 +26,21 @@ function dkc_single_start() {
       $links[$level_num]['data'] = t('Level @num', array('@num' => $level_num));
     }
 
+    // Get level tasks.
+    if ($function = ctools_plugin_get_function($level, 'single_player_tasks')) {
+      $tasks = $function();
+    }
+
     // Build level link.
-    $links[$level_num]['children'][] = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
+    $link = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
+    $task_list = array();
+    // Build level fieldset.
+    foreach ($tasks as $task_name => $task) {
+
+    }
+
+    // Build level link.
+    //$links[$level_num]['children'][] = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
   }
 
   // Start output array.
@@ -36,7 +53,6 @@ function dkc_single_start() {
     '#theme' => 'item_list',
     '#items' => $links,
     '#type' => 'ul',
-    '#title' => t('Levels'),
   );
 
   return $output;
@@ -66,8 +82,7 @@ function dkc_single_page($level) {
  */
 function dkc_single_score() {
   // Get user scorecard data.
-  global $user;
-  $user_scorecard = variable_get('dkc_user_scorecard-' . $user->uid, array());
+  $user_scorecard = dkc_single_get_user_score();
 
   // Any score yet?
   if (empty($user_scorecard)) {

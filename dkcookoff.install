@@ -27,6 +27,8 @@ function dkcookoff_install() {
  *   Basic settings
  */
 function dkcookoff_update_7000(&$sandbox) {
+  module_enable(array('dkc_core', 'dkc_single'));
+
   variable_set('site_frontpage', 'start');
   variable_set('theme_default', 'dkcookoff');
 

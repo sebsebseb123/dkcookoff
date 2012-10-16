@@ -1,7 +1,7 @@
-name = DK Cookoff - Core
-description = DK Cookoff - Core module.
+name = DK Cookoff - Dev
+description = DK Cookoff - Dev module.
 core = 7.x
 package = DK Cookoff
 php = 5.2.4
 version = 7.x-1.0
-project = dkc_core
+project = dkc_dev

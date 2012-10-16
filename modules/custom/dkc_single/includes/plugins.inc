@@ -16,14 +16,10 @@ function dkc_single_ctools_plugin_directory($module, $plugin) {
 
 /**
  * Implements hook_ctools_plugin_type().
- *
- * ...is this seriously undocumented in the guilde to create plugins?
- *
  */
 function dkc_single_ctools_plugin_type() {
   return array(
-    'level' => array(
-    ),
+    'level' => array(),
   );
 }
 
@@ -92,6 +88,20 @@ function dkc_single_get_level_plugin($id) {
 function dkc_single_get_level_plugins() {
   ctools_include('plugins');
   return ctools_get_plugins('dkc_single', 'level');
+}
+
+/**
+ * Fetch metadata for all level plugins.
+ *
+ * @param $file
+ *   String - The filename to load.
+ *
+ * @param $plugin
+ *   String - The plugin machine name to load from, or rather the directory
+ *   where the plugin is located.
+ */
+function dkc_single_level_include($file, $plugin) {
+  module_load_include('', 'dkc_single', 'includes/plugins/level/' . $plugin . '/includes/' . $file);
 }
 
 /**

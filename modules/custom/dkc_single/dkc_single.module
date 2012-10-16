@@ -7,6 +7,9 @@
 // Load the plugins include, which has a bunch of plugin functions we'll need.
 module_load_include('inc', 'dkc_single', 'includes/plugins');
 
+// Load the info include, which has a bunch of info getting functions we'll need.
+module_load_include('inc', 'dkc_single', 'includes/info');
+
 // Load the random include, which has some random generation functions that
 // plugins will need.
 module_load_include('inc', 'dkc_single', 'includes/random');
