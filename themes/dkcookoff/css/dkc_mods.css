@@ -29,3 +29,13 @@
   padding: 10px;
   border-radius: 10px;
 }
+
+.task-list li {
+  list-style-position: inside;
+}
+  .task-list li .passed {
+    color: green;
+  }
+  .task-list li .not-passed {
+    color: red;
+  }

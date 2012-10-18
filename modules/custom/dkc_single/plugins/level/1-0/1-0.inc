@@ -15,8 +15,8 @@
  */
 $plugin = array(
   'type' => 'level',
-  'title' => t('Intro'),
-  'description' => t('Get to know the system, learn how the game is played.'),
+  'title' => t('Intro to Drupal'),
+  'description' => t('What is Drupal? What is Drupal Kitchen? And how do you play this game anyway?'),
   'level' => 1,
   'sublevel' => 0,
   'weight' => 0,
@@ -29,7 +29,7 @@ $plugin = array(
  * Callback to return a list of single player tasks.
  */
 function dkc_level_1_0_single_player_tasks() {
-  return dkc_level_1_0_tasks();  
+  return dkc_level_1_0_tasks();
 }
 
 /**

@@ -10,6 +10,9 @@ module_load_include('inc', 'dkc_single', 'includes/plugins');
 // Load the info include, which has a bunch of info getting functions we'll need.
 module_load_include('inc', 'dkc_single', 'includes/info');
 
+// Load the formatting include, which has a bunch of formatting functions we'll need.
+module_load_include('inc', 'dkc_single', 'includes/formatting');
+
 // Load the random include, which has some random generation functions that
 // plugins will need.
 module_load_include('inc', 'dkc_single', 'includes/random');
@@ -75,45 +78,6 @@ function dkc_single_form_alter(&$form, &$form_state, $form_id) {
 }
 
 /**
- * Shorthand function to display an animated arrow for form fields.
- */
-function dkc_p_arrow() {
-  $variables = array(
-    'path' => drupal_get_path('module', 'dkc_single') . '/images/prefix_arrow.gif',
-    'attributes' => array(
-      'class' => array(
-        'animated-arrow',
-        'prefix-arrow',
-      ),
-    ),
-  );
-
-  return array(
-    '#field_prefix' => theme('image', $variables),
-  );
-}
-
-/**
- * Shorthand function to add prefix and suffix to fields.
- */
-function dkc_unused() {
-  return array(
-    '#prefix' => '<div class="dkc-unused">',
-    '#suffix' => '</div>',
-  );
-}
-
-/**
- * Shorthand function to add prefix and suffix to fieldsets.
- */
-function dkc_highlight_fieldset() {
-  return array(
-    '#prefix' => '<div class="dkc-highlight-fieldset">',
-    '#suffix' => '</div>',
-  );
-}
-
-/**
  * Implements hook_permission().
  */
 function dkc_single_permission() {
@@ -122,4 +86,43 @@ function dkc_single_permission() {
       'title' => t('Play a single player game of DK Cookoff'),
     ),
   );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dkc_single_theme($existing, $type, $theme, $path) {
+  return array(
+    'score_bar' => array(
+      'variables' => array('uid' => NULL),
+    ),
+  );
+}
+
+/**
+ * Implements theme_score_bar().
+ *
+ * @param
+ *   $uid - The User ID of the user we want to render a score bar for.
+ *
+ * @return
+ *   A renderable array representing a user's score.
+ */
+function theme_score_bar($uid = NULL) {
+  // Load user.
+  if (!empty($uid)) {
+    $user = user_load($uid);
+  }
+  else {
+    global $user;
+  }
+
+  // Start output.
+  $output = array();
+
+  $output['test'] = array(
+    '#markup' => t('ASDF'),
+  );
+
+  return $output;
 }

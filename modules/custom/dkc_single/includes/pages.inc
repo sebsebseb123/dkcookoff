@@ -16,16 +16,19 @@ function dkc_single_start() {
   // Sort by weight.
   uasort($levels, 'drupal_sort_weight');
 
+  // Start output array.
+  $output = array();
+  $output['desc'] = array(
+    '#type' => 'item',
+    '#description' => t('Welcome to the single player game. Click on any of the levels below to get started.'),
+  );
+
   // Build links to levels.
   $links = array();
   foreach ($levels as $level) {
-    $level_num = $level['level'];
-
-    // Build level label.
-    if (empty($links[$level_num])) {
-      $links[$level_num]['data'] = t('Level @num', array('@num' => $level_num));
-    }
-
+    // Reset the tasks and task_list.
+    $task_list = array();
+    $tasks = array();
     // Get level tasks.
     if ($function = ctools_plugin_get_function($level, 'single_player_tasks')) {
       $tasks = $function();
@@ -33,27 +36,36 @@ function dkc_single_start() {
 
     // Build level link.
     $link = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
-    $task_list = array();
+    $start_link = l(t('Start here'), $level['start_path'], array('query' => array('level' => $level['name'])));
+
     // Build level fieldset.
     foreach ($tasks as $task_name => $task) {
-
+      // Find out if we've passed this particular level.
+      $passed = isset($user_scorecard['passed'][$level['name']][$task_name]) ? TRUE : FALSE;
+      // Display the status.
+      $task_list[] = $task['title'] . ' - ' . ($passed ? '<span class="passed">' . t('Passed') . '</span>' : '<span class="not-passed">' . t('Not passed') . '</span>');
     }
 
-    // Build level link.
-    //$links[$level_num]['children'][] = l($level['title'], $level['start_path'], array('query' => array('level' => $level['name'])));
+    // Get the total number of tasks done.
+    $passed_total = !empty($user_scorecard['passed'][$level['name']]) ? count($user_scorecard['passed'][$level['name']]) : 0;
+    $output['desc'][$level['name']] = array(
+      '#type' => 'fieldset',
+      '#title' => $link . ' - ' . $passed_total . '/' . count($tasks),
+      '#description' => $start_link . ' | ' . $level['description'],
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
+    );
+    $output['desc'][$level['name']]['tasks'] = array(
+      '#theme' => 'item_list',
+      '#items' => $task_list,
+      '#type' => 'ul',
+      '#attributes' => array(
+        'class' => array(
+          'task-list',
+        ),
+      ),
+    );
   }
-
-  // Start output array.
-  $output = array();
-  $output['desc'] = array(
-    '#type' => 'item',
-    '#description' => t('Welcome to the single player game. Click on any of the levels below to get started.'),
-  );
-  $output['list'] = array(
-    '#theme' => 'item_list',
-    '#items' => $links,
-    '#type' => 'ul',
-  );
 
   return $output;
 }
