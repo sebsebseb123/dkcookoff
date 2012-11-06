@@ -5,10 +5,6 @@
  * Level 1 - 0.
  */
 
-// Load the plugin's includes.
-//dkc_single_level_include('1-0.pages.inc', '1-0');
-//dkc_single_level_include('1-0.form.inc', '1-0');
-
 /**
  * Plugins are described by creating a $plugin array which will be used
  * by the system that includes this file.
@@ -29,6 +25,9 @@ $plugin = array(
  * Callback to return a list of single player tasks.
  */
 function dkc_level_1_0_single_player_tasks() {
+  // Load the include file.
+  dkc_single_level_include('tasks', '1-0');
+
   return dkc_level_1_0_tasks();
 }
 

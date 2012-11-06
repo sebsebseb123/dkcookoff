@@ -71,23 +71,57 @@ function dkc_single_get_plugin_data($type, $node, $id = NULL) {
  * @param $id
  *   String - The plug in id.
  *
+ * @param $reset
+ *   Bool - Optional - Pull a fresh list... not from cache.
+ *
  * @return
  *   An array with information about the particular level plugin.
  */
-function dkc_single_get_level_plugin($id) {
-  ctools_include('plugins');
-  return ctools_get_plugins('dkc_single', 'level', $id);
+function dkc_single_get_level_plugin($level_id, $reset = NULL) {
+  return dkc_single_get_level_plugins($level_id, $reset);
 }
 
 /**
  * Fetch metadata for all level plugins.
  *
+ * @param $level_id
+ *   String - Optional - Level ID to load.
+ *
+ * @param $reset
+ *   Bool - Optional - Pull a fresh list... not from cache.
+ *
  * @return
  *   An array of arrays with information about all available level plugins.
  */
-function dkc_single_get_level_plugins() {
-  ctools_include('plugins');
-  return ctools_get_plugins('dkc_single', 'level');
+function dkc_single_get_level_plugins($level_id = NULL, $reset = NULL) {
+  // Start with static level loading.
+  static $drupal_static_fast;
+  if (!isset($drupal_static_fast)) {
+    $drupal_static_fast['levels'] = &drupal_static(__FUNCTION__);
+  }
+  $levels = &$drupal_static_fast['levels'];
+
+  // Get and/or set the level cache.
+  if (empty($levels) || $reset) {
+    // If we're not resetting, do we have cache data?
+    if (!$reset && $cache = cache_get('dkc_single')) {
+      $levels = $cache->data;
+    }
+    else {
+      // Load the plugins.
+      ctools_include('plugins');
+      $levels = ctools_get_plugins('dkc_single', 'level');
+
+      cache_set('dkc_single', $levels);
+    }
+  }
+
+  // If we're asked for a specific level ID... send that.
+  if (!empty($level_id)) {
+    return $levels[$level_id];
+  }
+
+  return $levels;
 }
 
 /**
@@ -101,7 +135,7 @@ function dkc_single_get_level_plugins() {
  *   where the plugin is located.
  */
 function dkc_single_level_include($file, $plugin) {
-  module_load_include('', 'dkc_single', 'includes/plugins/level/' . $plugin . '/includes/' . $file);
+  return module_load_include('inc', 'dkc_single', 'plugins/level/' . $plugin . '/includes/' . $plugin . '.' . $file);
 }
 
 /**
@@ -152,4 +186,28 @@ function dkc_single_level_submit_callback($form, &$form_state) {
       $function($form, $form_state);
     }
   }
+}
+
+/**
+ * Helper function to check and get plugin functions.
+ *
+ * @param $plugin
+ *   Array - The plugin info array.
+ *
+ * @param $callback_name
+ *   String - The function callback to look for.
+ *
+ * @return
+ *   String - Function name.
+ */
+function dkc_single_plugin_get_function($plugin, $callback_name) {
+  // Include the plugins file.
+  ctools_include('plugins');
+
+  // Get level tasks.
+  if ($function = ctools_plugin_get_function($plugin, $callback_name)) {
+    return $function;
+  }
+
+  return FALSE;
 }

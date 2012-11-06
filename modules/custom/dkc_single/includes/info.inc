@@ -26,3 +26,45 @@ function dkc_single_get_user_score($uid = NULL) {
   // Get user scorecard data.
   return variable_get('dkc_user_scorecard-' . $user->uid, array());
 }
+
+/**
+ * Helper function to load all levels... using caching!
+ *
+ * @param $level_id
+ *   String - Optional - Level ID to load.
+ *
+ * @param $reset
+ *   Bool - Optional - Pull a fresh list... not from cache.
+ *
+ * @return
+ *   An array of levels.
+ */
+function dkc_single_load_levels($level_id = NULL, $reset = NULL) {
+  return dkc_single_get_level_plugins($level_id, $reset);
+}
+
+/**
+ * Helper function to load all levels
+ *
+ * @param $level_id
+ *   String - The Level ID to load.
+ *
+ * @param $reset
+ *   Bool - Optional - Pull a fresh list... not from cache.
+ *
+ * @return
+ *   A loaded level array.
+ */
+function dkc_single_load_level($level_id, $reset = NULL) {
+  return dkc_single_get_level_plugin($level_id, $reset);
+}
+
+/**
+ * Level loading function.
+ *
+ * @return
+ *   A loaded level array.
+ */
+function dkc_level_load($level_id) {
+  return dkc_single_get_level_plugin($level_id);
+}

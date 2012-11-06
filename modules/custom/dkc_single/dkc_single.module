@@ -53,13 +53,6 @@ function dkc_single_menu() {
 }
 
 /**
- * Level loading function.
- */
-function dkc_level_load($level_id) {
-  return dkc_single_get_level_plugin($level_id);
-}
-
-/**
  * Implements hook_form_alter().
  */
 function dkc_single_form_alter(&$form, &$form_state, $form_id) {
@@ -108,7 +101,9 @@ function dkc_single_theme($existing, $type, $theme, $path) {
  * @return
  *   A renderable array representing a user's score.
  */
-function theme_score_bar($uid = NULL) {
+function theme_score_bar($variables) {
+  $uid = $variables['uid'];
+
   // Load user.
   if (!empty($uid)) {
     $user = user_load($uid);
@@ -116,6 +111,9 @@ function theme_score_bar($uid = NULL) {
   else {
     global $user;
   }
+
+  // Get level info.
+  $levels = dkc_single_load_levels();
 
   // Start output.
   $output = array();

@@ -30,7 +30,7 @@ function dkc_single_start() {
     $task_list = array();
     $tasks = array();
     // Get level tasks.
-    if ($function = ctools_plugin_get_function($level, 'single_player_tasks')) {
+    if ($function = dkc_single_plugin_get_function($level, 'single_player_tasks')) {
       $tasks = $function();
     }
 
