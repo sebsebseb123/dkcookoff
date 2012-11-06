@@ -88,39 +88,8 @@ function dkc_single_theme($existing, $type, $theme, $path) {
   return array(
     'score_bar' => array(
       'variables' => array('uid' => NULL),
+      'file' => 'theme.inc',
+      'path' => drupal_get_path('module', 'dkc_single') . '/includes',
     ),
   );
-}
-
-/**
- * Implements theme_score_bar().
- *
- * @param
- *   $uid - The User ID of the user we want to render a score bar for.
- *
- * @return
- *   A renderable array representing a user's score.
- */
-function theme_score_bar($variables) {
-  $uid = $variables['uid'];
-
-  // Load user.
-  if (!empty($uid)) {
-    $user = user_load($uid);
-  }
-  else {
-    global $user;
-  }
-
-  // Get level info.
-  $levels = dkc_single_load_levels();
-
-  // Start output.
-  $output = array();
-
-  $output['test'] = array(
-    '#markup' => t('ASDF'),
-  );
-
-  return $output;
 }

@@ -14,7 +14,7 @@ function dkc_level_e2_0_tasks() {
       'title' => t('Other example task.'),
     ),
     '2' => array(
-      'title' => t('Final round!'),
+      'title' => t('Final task for this level!'),
     ),
   );
 }

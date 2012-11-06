@@ -36,10 +36,7 @@ function dkcookoff_process_html(&$variables) {
   }
 
   // Add our score bar for the current player.
-  $variables['page_bottom']['score_bar'] = theme('score_bar');
-  //$variables['page_bottom']['score_bar'] = array(
-  //  '#markup' => 'KJGJHJGKJH',
-  //);
+  $variables['page_bottom'] .= theme('score_bar');
 }
 
 /**
