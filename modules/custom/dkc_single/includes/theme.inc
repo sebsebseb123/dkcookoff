@@ -26,16 +26,43 @@ function theme_score_bar($variables) {
     global $user;
   }
 
+  // Get the time if there is one.
+  if (!empty($user_score['started'])) {
+    $time = date('i:s', (time() - $user_score['started']['time']));
+    $current = t('Currently on level @level - task @task of @total_tasks',
+      array(
+        '@level' => $user_score['started']['level'],
+        '@task' => $user_score['started']['task'],
+        '@total_tasks' => $user_score['started']['total_tasks'],
+      )
+    );
+  }
+  else {
+    $time = '00:00';
+  }
+
   // Get level info.
   $levels = dkc_single_load_levels();
 
   // Start output.
-  $output = array();
-
-  $output['name'] = array(
+  $output = array(
     '#prefix' => '<div class="dkc-score-bar">',
-    '#markup' => $user->name,
     '#suffix' => '</div>',
+  );
+  $output['name'] = array(
+    '#prefix' => '<span class="dkc-user-name">',
+    '#markup' => $user->name,
+    '#suffix' => '</span>',
+  );
+  $output['time'] = array(
+    '#prefix' => '<span class="dkc-level-time">',
+    '#markup' => $time,
+    '#suffix' => '</span>',
+  );
+  $output['current'] = array(
+    '#prefix' => '<span class="dkc-level-time">',
+    '#markup' => $time,
+    '#suffix' => '</span>',
   );
 
   return drupal_render($output);

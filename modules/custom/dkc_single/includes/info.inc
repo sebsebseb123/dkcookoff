@@ -24,7 +24,42 @@ function dkc_single_get_user_score($uid = NULL) {
   }
 
   // Get user scorecard data.
-  return variable_get('dkc_user_scorecard-' . $user->uid, array());
+  if ($score_card = variable_get('dkc_user_scorecard-' . $user->uid, FALSE) && 0) {
+    return $score_card;
+  }
+  else {
+    return dkc_single_init_user_score($user);
+  }
+}
+
+/**
+ * Initialize a user's score card.
+ *
+ * @param $user
+ *   Object - A user object, which we will create a score card for.
+ */
+function dkc_single_init_user_score($user) {
+
+  // Get levels.
+  $levels = dkc_single_load_levels();
+  // Sort by weight.
+  uasort($levels, 'drupal_sort_weight');
+  $levels = array_values($levels);
+
+  // Init the array.
+  $score_card = array(
+    'started' => FALSE,
+    'passed' => array(),
+    'todo' => array(
+      $levels[0]['name'] => $levels[0]['title']
+    ),
+  );
+
+  // Set the var.
+  variable_set('dkc_user_scorecard-' . $user->uid, $score_card);
+
+  // Return the card.
+  return $score_card;
 }
 
 /**

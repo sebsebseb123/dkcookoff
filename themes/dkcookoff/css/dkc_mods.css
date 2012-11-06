@@ -39,3 +39,14 @@
   .task-list li .not-passed {
     color: red;
   }
+
+/**
+ * Score bar
+ */
+.dkc-score-bar {
+  width: 98%;
+  padding: 10px 2%;
+  position: fixed;
+  bottom: 0;
+  background: #BBB;
+}
