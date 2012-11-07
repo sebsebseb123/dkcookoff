@@ -44,9 +44,31 @@
  * Score bar
  */
 .dkc-score-bar {
-  width: 98%;
-  padding: 10px 2%;
+  width: 100%;
+  padding: 1em 0 1.5em;
   position: fixed;
   bottom: 0;
   background: #BBB;
 }
+  .dkc-score-bar .dkc-info {
+    margin: 0 1em;
+  }
+
+  .dkc-score-bar .dkc-score-left {
+    float: left;
+    height: 2em;
+    width: 33%;
+    text-align: left;
+  }
+  .dkc-score-bar .dkc-score-center {
+    float: left;
+    height: 2em;
+    width: 33%;
+    text-align: center;
+  }
+  .dkc-score-bar .dkc-score-right {
+    float: left;
+    height: 2em;
+    width: 33%;
+    text-align: right;
+  }

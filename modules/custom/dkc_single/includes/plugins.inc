@@ -211,3 +211,15 @@ function dkc_single_plugin_get_function($plugin, $callback_name) {
 
   return FALSE;
 }
+
+/**
+ * Function to init JS settings and other vars for starting a level.
+ *
+ * @param $level
+ *   String - The "machine name" of the level being started.
+ */
+function dkc_single_level_start($level) {
+  // TODO: Check if we've already started the level... if so, exit and do nothing.
+
+  //
+}

@@ -46,11 +46,14 @@ function dkc_single_start() {
       $task_list[] = $task['title'] . ' - ' . ($passed ? '<span class="passed">' . t('Passed') . '</span>' : '<span class="not-passed">' . t('Not passed') . '</span>');
     }
 
+    // Build time limit.
+    $time_limit = !empty($level['time_limit']) ? date('i:s', $level['time_limit']) : t('no time limit');
+
     // Get the total number of tasks done.
     $passed_total = !empty($user_scorecard['passed'][$level['name']]) ? count($user_scorecard['passed'][$level['name']]) : 0;
     $output['desc'][$level['name']] = array(
       '#type' => 'fieldset',
-      '#title' => $link . ' - ' . $passed_total . '/' . count($tasks),
+      '#title' => $link . ' - ' . $passed_total . '/' . count($tasks) . ' - ' . $time_limit,
       '#description' => $start_link . ' | ' . $level['description'],
       '#collapsible' => TRUE,
       '#collapsed' => TRUE,
@@ -81,6 +84,7 @@ function dkc_single_start() {
 function dkc_single_page($level) {
   // Get args
   $args = func_get_args();
+  // Remove the first level arg.
   array_shift($args);
 
   // Let the level run it's own page callback.

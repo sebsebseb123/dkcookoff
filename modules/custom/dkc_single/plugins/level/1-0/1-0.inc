@@ -16,6 +16,7 @@ $plugin = array(
   'level' => 1,
   'sublevel' => 0,
   'weight' => 0,
+  'time_limit' => 600,
   'start_path' => 'start/single/1-0/intro',
   'page_callback' => 'dkc_level_1_0_page_callback',
   'single_player_tasks' => 'dkc_level_1_0_single_player_tasks',
@@ -35,15 +36,18 @@ function dkc_level_1_0_single_player_tasks() {
  * Page callback, to handle the pages for this level.
  */
 function dkc_level_1_0_page_callback($args) {
+  // Get the page args.
   $page = array_shift($args);
+  // Include the file for page callbacks.
+  dkc_single_level_include('tasks', '1-0');
 
-  // Once you find the page, the level could handle it as it sees fit.
-  // For example, you could do:
-  //   $function = 'dkc_level_1_0_' . $page;
-  //   return $function($args);
-  //
-  // In this case, we'll just do an "if" to make sure we're in the right place.
-  if ($page != 'intro') {
+  // Find the appropriate page callback.
+  $function = 'dkc_level_1_0_page_' . $page;
+  if (function_exists($function)) {
+    return $function($args);
+  }
+  else {
+    // If not, return 404.
     return MENU_NOT_FOUND;
   }
 
