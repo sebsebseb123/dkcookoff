@@ -215,11 +215,25 @@ function dkc_single_plugin_get_function($plugin, $callback_name) {
 /**
  * Function to init JS settings and other vars for starting a level.
  *
- * @param $level
+ * @param $level_key
  *   String - The "machine name" of the level being started.
  */
-function dkc_single_level_start($level) {
-  // TODO: Check if we've already started the level... if so, exit and do nothing.
+function dkc_single_level_start($level_key) {
+  /// Get user score card.
+  $user_score = dkc_single_get_user_score();
 
-  //
+  // Check if we've already started the level... if so, exit and do nothing.
+  if (!empty($user_score['started'][$level_key])) {
+    return;
+  }
+
+  // Set the $user_score var.
+  $user_score['started'][$level_key] = array(
+    'time' => time(),
+    'completed' => array(),
+  );
+  dkc_single_set_user_score($user_score);
+
+  // Set JS timer settings.
+  drupal_add_js(array('dkcSingle' => array('timeStarted' => $user_score['started'][$level_key]['time'])), 'setting');
 }

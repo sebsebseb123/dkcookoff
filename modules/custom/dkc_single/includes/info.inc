@@ -24,12 +24,37 @@ function dkc_single_get_user_score($uid = NULL) {
   }
 
   // Get user scorecard data.
-  if ($score_card = variable_get('dkc_user_scorecard-' . $user->uid, FALSE) && 0) {
+  if ($score_card = variable_get('dkc_user_scorecard-' . $user->uid, FALSE)) {
     return $score_card;
   }
   else {
     return dkc_single_init_user_score($user);
   }
+}
+
+/**
+ * Helper function to set the players score info.
+ *
+ * @param $user_score
+ *   Array - User score card array.
+ *
+ * @param $uid
+ *   Int (Optional) - User ID to retrieve a score of. Or, if none then
+ *   get the score of the current user.
+ *
+ * @return A "score-card" array.
+ */
+function dkc_single_set_user_score($user_score, $uid = NULL) {
+  // Get the proper user.
+  if (!empty($uid) && is_numeric($uid)) {
+    $user = user_load($uid);
+  }
+  else {
+    global $user;
+  }
+
+  // Set user scorecard data.
+  variable_set('dkc_user_scorecard-' . $user->uid, $user_score);
 }
 
 /**

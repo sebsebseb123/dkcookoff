@@ -39,7 +39,7 @@ function dkc_level_1_0_page_callback($args) {
   // Get the page args.
   $page = array_shift($args);
   // Include the file for page callbacks.
-  dkc_single_level_include('tasks', '1-0');
+  dkc_single_level_include('pages', '1-0');
 
   // Find the appropriate page callback.
   $function = 'dkc_level_1_0_page_' . $page;

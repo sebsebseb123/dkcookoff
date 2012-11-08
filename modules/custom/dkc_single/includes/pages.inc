@@ -88,6 +88,7 @@ function dkc_single_page($level) {
   array_shift($args);
 
   // Let the level run it's own page callback.
+  ctools_include('plugins');
   if ($function = ctools_plugin_get_function($level, 'page_callback')) {
     return $function($args);
   }
